@@ -293,7 +293,7 @@
 
 
 .filter-structure-select {
-  padding: 25px 0;
+  padding: 0;
   font-size: 13px;
 } 
 .filter-structure-select .catalog-items {
@@ -371,14 +371,33 @@
 }
 /*filter-structure-row*/
 .filter-structure-left-row {
-  padding: 8px 40px;
+  padding: 12px 40px;
 }
 .filter-structure-main-row {
-  padding: 8px 40px;
+  padding: 12px 40px;
   text-align: center;
+  position: relative;
 }
 .filter-structure-main-row span {
   color: $lilac;
   border-bottom: 1px dashed $lilac;
   cursor: pointer;
+  font-size: 13px;
+}
+.filter-structure-row-all {
+  background-color: $bg-color;
+}
+.filter-structure-main-row .filter-structure-main-row-all {
+  color: #333;
+  border: none;
+
+}
+.btn-catalog {
+  position: absolute;
+  background-color: $red;
+  padding: 2px 43px;
+  right: 43px;
+  top: 8px;
+  color: $white;
+  text-transform: uppercase;
 }
