@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+<body>
+<svg style="display: none">	
+	<symbol id="down" viewBox="0 0 255 255">
+		<polygon points="0,63.75 127.5,191.25 255,63.75"/>
+	</symbol>
+</svg>
+<!--[if lt IE 8]>
+	<p>Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a></p>
+<![endif]-->
+<div class="wrapper">
+	<div class="header">
+		<div class="head-first">
+			<div class="container clearfix">
+				<div class="head-first-city">
+					<span>Москва</span>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="head-first-login">
+					<span>Войти</span>
+					<span>Зарегистрироваться</span>	
+				</div>
+			</div>
+		</div>
+
+		<div class="head-two">
+			<div class="container clearfix">
+				<div class="head-two-login col-lg-3">
+					<a class="head-two-login__link">
+						<img src="img/icons/logo.png" alt="Логотип">
+					</a>
+				</div>
+
+				<div class="head-search col-lg-3">
+					<form action="#" class="head-search-form">
+						<input type="search" placeholder="Поиск товаров">
+						<i class="fa fa-search head-search-ico"></i>
+					</form>
+				</div>
+
+					<div class="time-work col-lg-3">
+						<p>Время работы</p>
+						<p>пн-пт c 9.00 до 18.00</p>
+				</div> 
+
+				<div class="order-cart col-lg-2">
+					<span class="head-basket">
+						<i class="fa fa-shopping-cart fa-shopping-cart-ico"></i>
+						<span class="head-basket-ico">3</span>
+					</span>
+					<span class="order-sum">10 000</span>
+					<span class="shopping-cart-ico">&#8381;</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container">
+				<div class="box-menu clearfix">
+					<div class="box-menu-catalog">
+						<div class="menu-catalog__title menu-gamburger">
+							<p>Каталог товаров</p>
+							<span></span>
+						</div>
+					</div>
+					<ul class="page-menu">
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">О компании</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Акции</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Оплата</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Доставка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Установка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Контакты</a>
+						</li>
+						<li class="page-menu__item catalog-menu">
+							<a href="" class="page-menu__link">Еще
+								<svg class="catalog-ico">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#down"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+	
+					<div class="box-menu-phone">
+						<a href="tel:+78000000000" class="box-menu-phone__link">
+							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+						<a class="box-menu-callback" href="#">Заказать обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- page-card-prod -->
+	<div class="page-catalog clearfix">
+		
+		<div class="container container-up container-up--discount catalog clearfix">
+			<div class="catalog-filter">
+				<div class="clearfix">
+					<div class="filter-structure-left">
+						<div class="filter-structure__title">Бренды</div>
+						<div class="catalog-brands-wrap">
+							<div class="catalog-items">
+								<div class="checkbox__item">
+									<input type="checkbox" id="ampm" checked="">
+									<label for="ampm">Am.Pm</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="bravat">
+									<label for="bravat">Bravat</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="elghansa">
+									<label for="elghansa">Elghansa</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="grohe">
+									<label for="grohe">Grohe</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="hansgrohe">
+									<label for="hansgrohe">Hansgrohe</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="jacob">
+									<label for="jacob">Jacob Delafon</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="lemark">
+									<label for="lemark">Lemark</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="rossinka">
+									<label for="rossinka">Rossinka</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="wasserkraft">
+									<label for="wasserkraft">Wasserkraft</label>
+								</div>
+							</div><!--catalog-items  -->
+							<div class="catalog-items">
+								<div class="checkbox__item">
+									<input type="checkbox" id="ampm2" checked="">
+									<label for="ampm2">Am.Pm</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="bravat2">
+									<label for="bravat2">Bravat</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="elghansa2">
+									<label for="elghansa2">Elghansa</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="grohe2">
+									<label for="grohe2">Grohe</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="hansgrohe2">
+									<label for="hansgrohe2">Hansgrohe</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="jacob2">
+									<label for="jacob2">Jacob Delafon</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="lemark2">
+									<label for="lemark2">Lemark</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="rossinka2">
+									<label for="rossinka2">Rossinka</label>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="wasserkraft2">
+									<label for="wasserkraft2">Wasserkraft</label>
+								</div>
+							</div><!-- catalog-items -->
+						</div><!-- catalog-brands-wrap -->
+					</div><!-- filter-structure-left -->
+					<div class="filter-structure-main">
+						<div class="filter-structure-count clearfix">
+							<div class="filter-structure-range">
+								<div class="rang">
+									<input type="text" id="amount">
+									<input type="text" id="amount-max">
+									<div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+										<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+										<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+										<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span></div>
+								</div>
+								<div class="btn-box">
+									<button class="btn btn-transparent" type="submit">Показать</button>
+								</div>
+							</div><!-- filter-structure-range -->
+							<div class="filter-structure-val">
+								<div class="catalog-items">
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio10" checked="">
+										<label for="radio10">Менее 10 000</label>
+									</div>
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio11">
+										<label for="radio11">11 000 - 20 000</label>
+									</div>
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio21">
+										<label for="radio21">21 000 - 30 000</label>
+									</div>
+								</div><!--catalog-items -->
+								<div class="catalog-items">
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio31" checked="">
+										<label for="radio31">31 000 - 40 000</label>
+									</div>
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio41">
+										<label for="radio41">41 000 - 50 000</label>
+									</div>
+									<div class="checkbox__item">
+										<input type="radio" name="radio" id="radio50">
+										<label for="radio50">Более 50 000</label>
+									</div>
+								</div><!--catalog-items -->
+							</div><!-- filter-structure-val -->
+						</div><!-- filter-structure-count -->
+						<div class="filter-structure-select clearfix">
+							<div class="catalog-items">
+								<div class="checkbox__item">
+									<input type="checkbox" id="type" checked="">
+									<label for="type">Тип</label>
+								</div>
+								<div class="select__item">
+									<select name="appointment" id="appointment">
+										<option value="" disabled="disabled" selected="selected">Назначение</option>
+										<option>Назначение1</option>
+										<option>Назначение2</option>
+										<option>Назначение3</option>
+										<option>Назначение4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="system" id="system">
+										<option value="" disabled="disabled" selected="selected">Встраиваемая система</option>
+										<option>Встраиваемая система1</option>
+										<option>Встраиваемая система2</option>
+										<option>Встраиваемая система3</option>
+										<option>Встраиваемая система4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="control" id="control">
+										<option value="" disabled="disabled" selected="selected">Управление</option>
+										<option>Управление1</option>
+										<option>Управление2</option>
+										<option>Управление3</option>
+										<option>Управление4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="material" id="material">
+										<option value="" disabled="disabled" selected="selected">Материал</option>
+										<option>Материал1</option>
+										<option>Материал2</option>
+										<option>Материал3</option>
+										<option>Материал4</option>
+									</select>
+								</div>
+							</div><!--catalog-items -->
+							<div class="catalog-items">
+								<div class="select__item">
+									<select name="color" id="color">
+										<option value="" disabled="disabled" selected="selected">Цвет</option>
+										<option>Цвет1</option>
+										<option>Цвет2</option>
+										<option>Цвет3</option>
+										<option>Цвет4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="surface" id="surface">
+										<option value="" disabled="disabled" selected="selected">Поверхность</option>
+										<option>Поверхность1</option>
+										<option>Поверхность2</option>
+										<option>Поверхность3</option>
+										<option>Поверхность4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="application" id="application ">
+										<option value="" disabled="disabled" selected="selected">Область применения</option>
+										<option>Область применения1</option>
+										<option>Область применения2</option>
+										<option>Область применения3</option>
+										<option>Область применения4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="type-liner" id="type-liner">
+										<option value="" disabled="disabled" selected="selected">Тип подводки</option>
+										<option>Тип подводки1</option>
+										<option>Тип подводки2</option>
+										<option>Тип подводки3</option>
+										<option>Тип подводки4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="standard" id="standard">
+										<option value="" disabled="disabled" selected="selected">Стандарт подводки</option>
+										<option>Стандарт подводки1</option>
+										<option>Стандарт подводки2</option>
+										<option>Стандарт подводки3</option>
+										<option>Стандарт подводки4</option>
+									</select>
+								</div>
+							</div><!--catalog-items -->
+							<div class="catalog-items">
+								<div class="select__item">
+									<select name="form-izl" id="form-izl">
+										<option value="" disabled="disabled" selected="selected">Форма излива</option>
+										<option>Форма излива1</option>
+										<option>Форма излива2</option>
+										<option>Форма излива3</option>
+										<option>Форма излива4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="rotation-izl" id="rotation-izl">
+										<option value="" disabled="disabled" selected="selected">Вращение излива	</option>
+										<option>Вращение излива	1</option>
+										<option>Вращение излива	2</option>
+										<option>Вращение излива	3</option>
+										<option>Вращение излива	4</option>
+									</select>
+								</div>
+								<div class="checkbox__item">
+									<input type="checkbox" id="retractable-spout">
+									<label for="retractable-spout">Выдвижной излив</label>
+								</div>
+								<div class="select__item">
+									<select name="length" id="length">
+										<option value="" disabled="disabled" selected="selected">Длина шланга, см</option>
+										<option>Длина шланга1</option>
+										<option>Длина шланга2</option>
+										<option>Длина шланга3</option>
+										<option>Длина шланга4</option>
+									</select>
+								</div>
+								<div class="select__item">
+									<select name="socket-size" id="
+									socket-size">
+										<option value="" disabled="disabled" selected="selected">Размер розетки, см</option>
+										<option>Размер розетки1</option>
+										<option>Размер розетки2</option>
+										<option>Размер розетки3</option>
+										<option>Размер розетки4</option>
+									</select>
+								</div>
+							</div><!--catalog-items -->
+							
+						</div><!-- filter-structure-select -->
+					</div> <!-- filter-structure-main -->
+				</div>
+				
+				<div class="filter-structure-row clearfix">
+					<div class="filter-structure-left filter-structure-left-row ">Выбрать серии</div>
+					<div class="filter-structure-main filter-structure-main-row">
+						<span>Расширенный фильтр</span>
+					</div>
+				</div>
+				<!-- /.filter -->
+			</div>
+
+
+			<div class="page-discount-title">С ЭТИМ ТОВАРОМ ПРОСМАТРИВАЮТ</div> 
+
+			<div class="page-card-series-wrap">
+				<div class="page-card-watch clearfix">
+					<div class="page-card-watch-item-wrap">
+						<div class="page-card-watch-item">
+							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
+							<div class="page-card-series-item-name">Смеситель</div>
+							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+							<div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/signal.png">
+								</div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/heart.png">
+								</div>
+							</div>
+							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
+						</div>
+					</div>
+					<div class="page-card-watch-item-wrap">
+						<div class="page-card-watch-item">
+							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
+							<div class="page-card-series-item-name">Смеситель</div>
+							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+							<div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/signal.png">
+								</div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/heart.png">
+								</div>
+							</div>
+							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
+						</div>
+					</div>
+					<div class="page-card-watch-item-wrap">
+						<div class="page-card-watch-item">
+							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
+							<div class="page-card-series-item-name">Смеситель</div>
+							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+							<div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/signal.png">
+								</div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/heart.png">
+								</div>
+							</div>
+							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
+						</div>
+					</div>
+					<div class="page-card-watch-item-wrap">
+						<div class="page-card-watch-item">
+							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
+							<div class="page-card-series-item-name">Смеситель</div>
+							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+							<div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/signal.png">
+								</div>
+								<div class="page-card-series-item-ico">
+									<img src="img/card-prod/heart.png">
+								</div>
+							</div>
+							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="page-discount-bottom">
+				<div class="page-discount-bottom-img"><img src="img/ask.png" alt="Вопрос"></div>
+				<a href="#">Что можно улучшить на этой странице?</a> </div>
+			
+		</div>
+
+	
+	
+		
+
+
+		<!-- sticky-menu -->
+		<div class="footer-sticky-menu">
+			<div class="container clearfix">
+				<div class="sticky-menu">
+					<div class="sticky-menu-phone">
+						<a href="tel:+78000000000" class="box-menu-phone__link">
+							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+					</div>
+					<div class="sticky-menu-box-btn">
+						<button type="button">Сравнить</button>
+					</div>
+
+					<div class="sticky-menu-box-btn">
+						<button type="button">Обратная связь</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- end page-main -->
+</div>
+<!-- end wrapper -->
+
+
+<footer class="footer">
+	<div class="container clearfix">
+		<div class="footer-item col-lg-3">
+			<div class="footer-logo">
+				<img src="img/icons/logo-footer.png" alt="">
+			</div>
+			<div class="footer-menu-phone">
+				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<span>8 (800) 000-00-00</span>
+				</a>
+				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<span>8 (800) 000-00-00</span>
+				</a>
+				<a href="" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-map-marker box-menu-phone__ico"></i>
+					<span>г. Москва, ул. Кирова 105а</span>
+				</a>
+			</div>
+
+			<ul class="footer-social">
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-vk"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Интернет-Магазин
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Новости
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Отзывы
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Производители
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Условия оплаты
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Политика конфиденциальности
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Пользовательское соглашение
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Компания
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						О компании
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Вакансии
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Дизайнерам и партнерам
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Помощь покупателю
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Видео-обзоры
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Получение и возврат товара
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Установка и подключение
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Как сделать заказ
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+
+<div class="footer-bottom-box">
+	<div class="container clearfix">
+		<div class="box-konf">
+			<p>Вся информация на сайте принадлежит владельцам интернет-магазина sferaremonta.ru.
+			   Все права защищены. 
+               Информация размещенная на сайте sferaremonta.ru не является публичной офертой.
+            </p>
+		</div>
+
+		<ul class="order__list">
+			<li class="order__item">
+				<a href="" class="order__link sprite-VISA"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-mastercard"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Yandex"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Qiwi"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Sber"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-alfa"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!--JAVA SCRIPT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

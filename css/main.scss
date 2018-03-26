@@ -1,0 +1,39 @@
+$lilac-color: #9aafd1;
+$lilac: #5674a5;
+$color-footer: #86a2d0;
+$white: #fff;
+$white2: rgba(255, 255, 255, 0.5);
+$blue: #1a3a6b;
+$red: #dc383b;
+$black: #202020;
+$gray: #4c4c4c;
+$gray-name: #cccccc;
+$gray-light: #a5a2a2;
+$gray-date: #999999;
+$bg-color: #ededed;
+$button: #51627d;
+$border: #f4f4f4;
+$overlay-black: rgba(0, 0, 0, 0.3);
+
+// laout
+@import "settings/normalize.scss";
+@import "settings/setting.scss";
+@import "settings/font-awesome.scss";
+// @import "settings/fa-svg-with-js.scss";
+// @import "../fontawesome/web-fontss-with-css/css/fontawesome-all.scss";
+@import "../libs/bootstrap/bootstrap.scss";
+@import "../libs/slick/slick.scss";
+@import "../libs/slick/slick-theme.scss";
+@import "sections/main-slider.scss";
+@import "sections/header.scss";
+@import "sections/page-content.scss";
+@import "sections/discount.scss";
+@import "sections/how-choose.scss";
+@import "sections/about.scss";
+@import "sections/contacts.scss";
+@import "sections/sertific.scss";
+@import "sections/vacancies.scss";
+@import "sections/card-prod.scss";
+@import "sections/catalog.scss";
+@import "sections/footer.scss";
+

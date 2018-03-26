@@ -1,0 +1,29 @@
+.page-how-choose {
+  padding-top: 20px;
+  background-color: $bg-color;
+}
+.page-how-choose-main {
+  width: 76%;
+  float: left;
+}
+.page-how-choose-item {
+  margin-bottom: 16px;
+}
+.page-how-choose-item a {
+  display: block;
+  padding: 35px;
+  color: $gray;
+}
+.item-shadow {
+  -webkit-box-shadow: 0px 3px 8px -2px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 3px 8px -2px rgba(153,153,153,1);
+  box-shadow: 0px 3px 8px -2px rgba(153,153,153,1);
+}
+.page-how-choose-views {
+  display: inline-block;
+  float: right;
+  padding-top: 0;
+}
+.how-choose-sidebar-items {
+  padding-bottom: 50px;
+}

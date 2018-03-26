@@ -1,0 +1,69 @@
+.vacancies-list {
+  width: 43%;
+  display: inline-block;
+  vertical-align: top;
+}
+.vacancy-item {
+  margin-bottom: 40px;
+  margin-left: 15px;
+  direction: ltr;
+  text-align: left;
+  cursor: pointer;
+}
+.vacancy-item-title {
+  padding: 18px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.vacancy-item.active .vacancy-item-title {
+  color: $white;
+  background-color: $color-footer;
+}
+.vacancy-item-main {
+  padding: 8px 36px 13px;
+  font-size: 14px;
+}
+.vacancy-item.active .vacancy-item-main {
+  color: $white;
+  background-color: $lilac;
+}
+.vacancy-item-top {
+  padding-bottom: 14px;
+}
+.vacancies-box {
+  width: 52%;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 4%;
+  vertical-align: top;
+}
+
+.vacancies-box-item {
+  padding-bottom: 14px;
+}
+.vacancies-box-up {
+  color: $lilac;
+}
+.vacancies-list {
+  max-height: 1171px;
+  position: relative;
+  overflow: auto;
+  direction: rtl;
+}
+.vacancies-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: $bg-color;
+}
+
+.vacancies-list::-webkit-scrollbar {
+  left: 0;
+  width: 12px;
+  background-color: $bg-color;
+
+}
+
+.vacancies-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: $lilac-color;
+}

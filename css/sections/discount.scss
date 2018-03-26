@@ -1,0 +1,130 @@
+.container-up--discount {
+  margin-top: 0;
+}
+.page-discount {
+  padding-top: 20px;
+  background-color: $bg-color;
+
+}
+.page-discount-title {
+  padding: 15px 40px;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 16px;
+  background-color: $gray;
+}
+.page-discount-info {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 38px 42px;
+  background-color: $white;
+}
+.page-discount-main {
+  width: 72%;
+  float: left;
+}
+.page-discount-main p {
+  padding: 8px 0;
+}
+.page-discount-epigr {
+  padding: 8px 0;
+  font-style: italic;
+}
+.page-discount-subtitle {
+  color: $red;
+}
+
+.page-discount-up {
+  padding: 18px 0;
+  line-height: 1.8;
+  color: $gray-date;
+ }
+.page-discount-up-tags a {
+   color: $lilac-color;
+}
+.page-discount-up-views {
+  padding-bottom: 18px;
+}
+.page-discount-up-views-img {
+  width: 20px;
+  display: inline-block;
+}
+.page-discount-up-views-img img {
+  width: 100%;
+}
+.page-discount-up-date {
+  color: $gray-date;
+}
+
+.page-discount-right-sidebar {
+  width: 27%;
+  margin-left: 1%;
+  float: right;
+}
+.discount-right-sidebar-title {
+  color: $white;
+  text-align-last: center;
+  background-color: $red;
+  padding: 16px 0;
+  display: block;
+}
+.discount-sidebar-items {
+  border: 1px solid $gray-light;
+  padding: 0 22px;
+}
+.discount-sidebar-item {
+  padding: 22px 0;
+  border-bottom: 1px solid $gray-light;
+}
+.discount-sidebar-item a {
+  color: $gray;
+}
+.discount-sidebar-item:last-child {
+  border-bottom: none;
+}
+.page-discount-bottom {
+  padding: 10px 0;
+}
+.page-discount-bottom-img {
+  width: 25px;
+  display: inline-block;
+}
+.page-discount-bottom-img img {
+  width: 100%;
+}
+.page-discount-bottom a {
+  color: $lilac-color;
+  border-bottom: 1px dashed $lilac-color;
+}
+.main-href {
+  font-style: italic;
+  border-bottom: 1px dashed;
+  color: $gray;
+}
+.discount-sidebar-href {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.page-discount-sidebar-tags {
+  float: left;
+  width: 65%;
+}
+.page-discount-sidebar-views {
+  float: right;
+  width: 34%;
+  padding-bottom: 0;
+}
+.discount-right-sidebar-subtitle {
+  font-style: italic;
+}
+.discount-right-sidebar-title-down {
+  background-color: $lilac-color;
+  font-size: 14px;
+}
+.discount-right-sidebar-title-down span {
+  border-bottom: 1px dashed $white;
+}

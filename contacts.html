@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+<body>
+<svg style="display: none">	
+	<symbol id="down" viewBox="0 0 255 255">
+		<polygon points="0,63.75 127.5,191.25 255,63.75"/>
+	</symbol>
+</svg>
+<!--[if lt IE 8]>
+	<p>Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a></p>
+<![endif]-->
+<div class="wrapper">
+	<div class="header">
+		<div class="head-first">
+			<div class="container clearfix">
+				<div class="head-first-city">
+					<span>Москва</span>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="head-first-login">
+					<span>Войти</span>
+					<span>Зарегистрироваться</span>	
+				</div>
+			</div>
+		</div>
+
+		<div class="head-two">
+			<div class="container clearfix">
+				<div class="head-two-login col-lg-2">
+					<a class="head-two-login__link">
+						<img src="img/icons/logo.png" alt="Логотип">
+					</a>
+				</div>
+
+				<div class="head-search col-lg-3">
+					<form action="#" class="head-search-form">
+						<input type="search" placeholder="Поиск товаров">
+						<i class="fa fa-search head-search-ico"></i>
+					</form>
+				</div>
+
+				<div class="order-phone col-lg-3">
+					<button type="button">Заказать звонок</button>
+				</div>
+
+				<div class="order-cart col-lg-3">
+					<span class="head-basket">
+						<i class="fa fa-shopping-cart fa-shopping-cart-ico"></i>
+						<span class="head-basket-ico">3</span>
+					</span>
+					<span class="order-sum">10 000</span>
+					<span class="shopping-cart-ico">&#8381;</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container">
+				<div class="box-menu clearfix">
+					<div class="box-menu-catalog">
+						<div class="menu-catalog__title menu-gamburger">
+							<p>Каталог товаров</p>
+							<span></span>
+						</div>
+					</div>
+					<ul class="page-menu">
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">О компании</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Акции</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Оплата</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Доставка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Установка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Контакты</a>
+						</li>
+						<li class="page-menu__item catalog-menu">
+							<a href="" class="page-menu__link">Еще
+								<svg class="catalog-ico">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#down"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+	
+					<div class="box-menu-phone">
+						<a href="tel:+78000000000" class="box-menu-phone__link">
+							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- page-discount -->
+	<div class="page-discount clearfix">
+		
+		<div class="container container-up container-up--discount clearfix">
+			<div class="page-discount-title">Контакты</div> 
+			<div class="page-discount-info clearfix page-contacts-info">
+				<div class="page-contacts-left">
+					<div class="footer-menu-phone page-contacts-phone">
+						<a href="tel:+78000000000" class="about-phone__link">
+							<i class="fa fa-phone about-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+						<a href="tel:+78000000000" class="about-phone__link">
+							<i class="fa fa-phone about-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+						<a href="#" class="about-phone__link">
+							<i class="fa fa-map-marker about-phone__ico"></i>
+							г. Москва,
+							<p class="page-contacts-adress">ул. Кирова 105а</p>
+						</a>
+					</div>
+
+				</div>
+				<div class="page-contacts-main">
+					<div id="page-contacts-map" class="page-contacts-map"></div>
+				</div>
+
+	
+			</div>
+			<div class="page-discount-bottom">
+				<div class="page-discount-bottom-img"><img src="img/ask.png" alt="Вопрос"></div>
+				<a href="#">Что можно улучшить на этой странице?</a> </div>
+			
+		</div>
+
+	
+	
+		
+
+
+		<!-- sticky-menu -->
+		<div class="footer-sticky-menu">
+			<div class="container clearfix">
+				<div class="sticky-menu">
+					<div class="sticky-menu-phone">
+						<a href="tel:+78000000000" class="box-menu-phone__link">
+							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>
+					</div>
+					<div class="sticky-menu-box-btn">
+						<button type="button">Сравнить</button>
+					</div>
+
+					<div class="sticky-menu-box-btn">
+						<button type="button">Обратная связь</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- end page-main -->
+</div>
+<!-- end wrapper -->
+
+
+<footer class="footer">
+	<div class="container clearfix">
+		<div class="footer-item col-lg-3">
+			<div class="footer-logo">
+				<img src="img/icons/logo-footer.png" alt="">
+			</div>
+			<div class="footer-menu-phone">
+				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<span>8 (800) 000-00-00</span>
+				</a>
+				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<span>8 (800) 000-00-00</span>
+				</a>
+				<a href="" class="box-menu-phone__link footer-box-menu-phone__link">
+					<i class="fa fa-map-marker box-menu-phone__ico"></i>
+					<span>г. Москва, ул. Кирова 105а</span>
+				</a>
+			</div>
+
+			<ul class="footer-social">
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-vk"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li class="footer-social__item">
+					<a class="footer-social__link" href="">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Интернет-Магазин
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Новости
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Отзывы
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Производители
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Условия оплаты
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Политика конфиденциальности
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Пользовательское соглашение
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Компания
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						О компании
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Вакансии
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Дизайнерам и партнерам
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-item col-lg-3">
+			<ul class="footer-list">
+				<li class="footer__item footer__item_title">
+					<a href="" class="footer-link footer-link__title">
+						Помощь покупателю
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Видео-обзоры
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Получение и возврат товара
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Установка и подключение
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer-link">
+						Как сделать заказ
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+
+<div class="footer-bottom-box">
+	<div class="container clearfix">
+		<div class="box-konf">
+			<p>Вся информация на сайте принадлежит владельцам интернет-магазина sferaremonta.ru.
+			   Все права защищены. 
+               Информация размещенная на сайте sferaremonta.ru не является публичной офертой.
+            </p>
+		</div>
+
+		<ul class="order__list">
+			<li class="order__item">
+				<a href="" class="order__link sprite-VISA"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-mastercard"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Yandex"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Qiwi"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-Sber"></a>
+			</li>
+			<li class="order__item">
+				<a href="" class="order__link sprite-alfa"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!--JAVA SCRIPT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
