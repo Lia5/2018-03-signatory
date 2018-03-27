@@ -84,3 +84,9 @@ svg {
     transition: 200ms;
     transition-timing-function: ease-in-out;
 }
+select:active, 
+select:hover, 
+select:focus {
+ outline: 0;
+ outline-offset: 0;
+}

@@ -492,6 +492,12 @@ svg {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out; }
 
+select:active,
+select:hover,
+select:focus {
+  outline: 0;
+  outline-offset: 0; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -9571,6 +9577,7 @@ button.close {
 .box-slider-company {
   padding: 11px 0;
   background: #fff;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
   box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
@@ -9597,16 +9604,17 @@ button.close {
   font-size: 24px;
   position: absolute;
   top: 50%;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(76, 76, 76, 0.302);
-  color: rgba(255, 255, 255, 0.7);
+  width: 33px;
+  height: 33px;
+  color: rgba(76, 76, 76, 0.5);
   cursor: pointer;
   outline: none;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
+  transform: translate(0, -50%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 .slider-company .slider-company-arrows:hover {
   background-color: transparent;
@@ -9622,11 +9630,17 @@ button.close {
 
 .slider-company .fa-angle-right:before {
   padding: 2px 12px;
-  display: inline-block; }
+  display: inline-block;
+  display: none; }
 
 .slider-company .fa-angle-left:before {
   padding: 2px 10px;
-  display: inline-block; }
+  display: inline-block;
+  display: none; }
+
+.box-slider-company:hover .slider-company .fa-angle-right:before,
+.box-slider-company:hover .slider-company .fa-angle-left:before {
+  display: block; }
 
 .head-first {
   background: #9aafd1;
@@ -9663,6 +9677,7 @@ button.close {
   vertical-align: middle; }
 
 .head-two-login {
+  padding: 5px 0;
   float: left; }
 
 .head-search-form {
@@ -9711,13 +9726,15 @@ button.close {
   float: right;
   background: #9aafd1;
   padding: 7px 25px;
-  border-radius: 4px; }
-
-.order-cart {
+  border-radius: 4px;
+  margin-top: 4px;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer; }
+
+.head-search {
+  margin-top: 4px; }
 
 .fa-shopping-cart-ico, .shopping-cart-ico {
   color: #fff;
@@ -9760,8 +9777,7 @@ button.close {
   display: inline-block;
   vertical-align: middle;
   font-size: 0;
-  padding: 16px 0;
-  padding-left: 15px; }
+  padding: 16px 0 17px 15px; }
 
 .page-menu__item:hover:before {
   content: "";
@@ -9779,7 +9795,7 @@ button.close {
 
 .box-menu-phone {
   float: right;
-  padding: 4px 0;
+  padding: 3px 0;
   max-width: 190px; }
 
 .box-menu-callback {
@@ -9910,7 +9926,7 @@ button.close {
   margin-top: -40px; }
 
 .catalog-items {
-  margin-bottom: 17px; }
+  margin-bottom: 30px; }
 
 .catalog-item {
   position: relative;
@@ -10780,8 +10796,13 @@ button.close {
   padding-top: 20px;
   color: #cccccc; }
 
+.page-card-series-item-img {
+  width: 165px;
+  max-height: 183px; }
+
 .page-card-series-item-img img {
   width: 100%;
+  height: 100%;
   margin: 0 auto; }
 
 .page-card-series-item-price {
@@ -10812,6 +10833,9 @@ button.close {
   width: 25%;
   float: left;
   padding-right: 20px; }
+
+.page-card-watch-item-wrap:nth-child(4n) {
+  padding-right: 0; }
 
 .page-card-watch-item {
   padding: 30px 50px;
@@ -10931,6 +10955,9 @@ button.close {
   float: right;
   width: 75%; }
 
+.filter-structure-main .catalog-items {
+  margin-bottom: 2px; }
+
 .filter-structure-range {
   float: left;
   width: 29%;
@@ -10944,7 +10971,7 @@ button.close {
   color: #fff; }
 
 .filter-structure-count {
-  padding: 25px 40px;
+  padding: 25px 40px 0 40px;
   font-size: 12px; }
 
 .rang {
@@ -11143,12 +11170,6 @@ button.close {
   -moz-appearance: radio-container;
   appearance: none; }
 
-.select__item select:active,
-.select__item select:hover,
-.select__item select:focus {
-  outline: 0;
-  outline-offset: 0; }
-
 .select__item::before {
   content: '';
   display: block;
@@ -11207,6 +11228,121 @@ button.close {
   top: 8px;
   color: #fff;
   text-transform: uppercase; }
+
+/*page-catalog-sort*/
+.page-catalog-sort {
+  padding: 22px 40px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #4c4c4c; }
+
+.page-catalog-sort-left {
+  float: left; }
+
+.page-catalog-sort-title {
+  display: inline-block;
+  text-transform: uppercase; }
+
+.sort__item {
+  display: inline-block;
+  position: relative; }
+
+div.sort__item {
+  margin-left: 23px; }
+
+.sort__item select {
+  padding: 5px 25px 5px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: radio-container;
+  appearance: none; }
+
+.page-catalog-sort-right {
+  float: right; }
+
+.sort__item li {
+  display: inline-block;
+  color: #dc383b;
+  cursor: pointer;
+  margin-left: 10px;
+  line-height: 2; }
+
+.sort__item-fa {
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 47%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.page-card-watch-item-wrap-catalog {
+  padding-bottom: 20px; }
+
+.page-card-watch-catalog {
+  margin-bottom: 0; }
+
+/**/
+.page-catalog-title {
+  padding: 6px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  background-color: #dc383b;
+  text-align: center; }
+
+.pagination {
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px; }
+
+.pagination__list {
+  display: inline-block; }
+
+.pagination-arrow_prev {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.pagination-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #dc383b;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+.next-ico {
+  width: 20px;
+  height: 20px;
+  fill: #fff; }
+
+svg {
+  -o-transition: 200ms;
+  transition: 200ms;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out; }
+
+.pagination__item {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  width: 30px; }
+
+.pagination__item_active .pagination__link {
+  color: #dc383b; }
+
+.pagination__link {
+  font-size: 20px;
+  color: #4c4c4c;
+  display: block;
+  text-align: center; }
 
 .footer-sticky-menu {
   background: #4c4c4c;
