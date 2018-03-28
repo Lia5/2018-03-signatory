@@ -11731,7 +11731,8 @@ svg:not(:root) {
   text-decoration: underline; }
 
 .page-catalog-full-accordeon a {
-  color: #5674a5; }
+  color: #5674a5;
+  text-decoration: underline; }
 
 .page-catalog-full-accordeon .accordeon-content {
   padding-left: 20px; }
