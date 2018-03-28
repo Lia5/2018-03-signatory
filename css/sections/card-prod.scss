@@ -221,6 +221,10 @@ background-color: $red;
   color: $white;
   background-color: $button;
 }
+.page-card-item-descr-more:hover {
+  opacity: 0.7;
+}
+
 .page-card-item-descr-more-har {
   margin-right: 18px;
 }
@@ -336,6 +340,10 @@ background-color: $red;
   background-color: $gray;
   cursor: pointer;
 }
+.card-prod-tab-item:hover {
+  opacity: 0.7;
+}
+
 .card-prod-tab-item.active {
   background-color: $white;
   color: $red;
@@ -377,6 +385,9 @@ background-color: $red;
   border-right: 1px solid $button; 
   text-align: center;
   cursor: pointer;
+}
+.card-prod-har-all:hover {
+  opacity: 0.7;
 }
 .card-prod-har-all td:first-child {
   border-right: 1px solid $button;

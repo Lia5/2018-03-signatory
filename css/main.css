@@ -10657,6 +10657,9 @@ button.close {
   color: #fff;
   background-color: #51627d; }
 
+.page-card-item-descr-more:hover {
+  opacity: 0.7; }
+
 .page-card-item-descr-more-har {
   margin-right: 18px; }
 
@@ -10762,6 +10765,9 @@ button.close {
   background-color: #4c4c4c;
   cursor: pointer; }
 
+.card-prod-tab-item:hover {
+  opacity: 0.7; }
+
 .card-prod-tab-item.active {
   background-color: #fff;
   color: #dc383b; }
@@ -10801,6 +10807,9 @@ button.close {
   border-right: 1px solid #51627d;
   text-align: center;
   cursor: pointer; }
+
+.card-prod-har-all:hover {
+  opacity: 0.7; }
 
 .card-prod-har-all td:first-child {
   border-right: 1px solid #51627d; }
