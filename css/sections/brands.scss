@@ -1,0 +1,60 @@
+.page-brands-about {
+  font-size: 14px;
+  color: $gray;
+}
+.page-brands-navigation {
+  font-size: 18px;
+  color: $black;
+}
+.navigation__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation__item {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  width: 26px;
+}
+.navigation__link {
+  font-size: 18px;
+  color: $black;
+  display: block;
+  text-align: center;
+}
+.page-brands-navigation {
+  padding: 27px 0 40px 0;
+}
+.page-brands-navigation-en {
+  padding: 3px 0;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+}
+.page-brands-navigation-ru {
+    padding: 3px 0;
+    border-bottom: 2px solid #999;  
+}
+.page-brands-item-img {
+  height: 42px;
+}
+.page-brands-item-img img {
+  width: 100%;
+}
+.page-brands-item {
+  padding: 40px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  
+}
+.page-brands-item-descr {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+.page-brands-item-county {
+  color: #999;
+}
+.page-brands-title {
+  margin-top: 20px;
+}
+

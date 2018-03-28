@@ -10555,7 +10555,10 @@ button.close {
   text-align: center;
   margin-bottom: 10px;
   cursor: pointer;
-  width: 100%; }
+  width: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
 .typical-btn:hover {
   opacity: 0.7; }
@@ -10787,7 +10790,10 @@ button.close {
   transform: translate(-50%);
   background-color: #dc383b;
   color: #fff;
-  padding: 10px 16px; }
+  padding: 10px 16px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
 .page-card-controls-discount-img {
   width: 15px;
@@ -11035,7 +11041,10 @@ button.close {
 .page-card-watch-item {
   padding: 30px 50px;
   background-color: #fff;
-  max-height: 388px; }
+  max-height: 388px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
 .page-card-series-item:hover img,
 .page-card-watch-item:hover img {
@@ -11486,7 +11495,8 @@ div.sort__item {
   padding: 5px 25px 5px 16px;
   -webkit-appearance: none;
   -moz-appearance: radio-container;
-  appearance: none; }
+  appearance: none;
+  border-radius: 3px; }
 
 .page-catalog-sort-right {
   float: right; }
@@ -11520,7 +11530,11 @@ div.sort__item {
   color: #fff;
   font-size: 14px;
   background-color: #dc383b;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
 .pagination {
   float: none;
@@ -11539,7 +11553,8 @@ div.sort__item {
   background: #dc383b;
   color: #fff;
   padding: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 3px; }
 
 .pagination-arrow:hover {
   opacity: 0.7; }
@@ -11615,10 +11630,64 @@ svg:not(:root) {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-.page-discounts-title {
+.page-brands-about {
+  font-size: 14px;
+  color: #4c4c4c; }
+
+.page-brands-navigation {
+  font-size: 18px;
+  color: #202020; }
+
+.navigation__list {
+  display: inline-block;
+  vertical-align: middle; }
+
+.navigation__item {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  width: 26px; }
+
+.navigation__link {
+  font-size: 18px;
+  color: #202020;
+  display: block;
+  text-align: center; }
+
+.page-brands-navigation {
+  padding: 27px 0 40px 0; }
+
+.page-brands-navigation-en {
+  padding: 3px 0;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999; }
+
+.page-brands-navigation-ru {
+  padding: 3px 0;
+  border-bottom: 2px solid #999; }
+
+.page-brands-item-img {
+  height: 42px; }
+
+.page-brands-item-img img {
+  width: 100%; }
+
+.page-brands-item {
+  padding: 40px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
   box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
+
+.page-brands-item-descr {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 18px; }
+
+.page-brands-item-county {
+  color: #999; }
+
+.page-brands-title {
+  margin-top: 20px; }
 
 .footer-sticky-menu {
   background: #4c4c4c;

@@ -432,7 +432,10 @@ div.sort__item {
   -webkit-appearance: none;
   -moz-appearance: radio-container;
   appearance: none;
+  border-radius: 3px;
 }
+
+
 
 .page-catalog-sort-right {
   float: right;
@@ -465,6 +468,10 @@ div.sort__item {
   font-size: 14px;
   background-color: $red;
   text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+
 }
 .pagination {
   float: none;
@@ -489,6 +496,7 @@ div.sort__item {
   color: #fff;
   padding: 5px;
   cursor: pointer;
+  border-radius: 3px;
 }
 .pagination-arrow:hover {
   opacity: 0.7;
