@@ -10814,7 +10814,7 @@ button.close {
 .card-prod-har-all td:first-child {
   border-right: 1px solid #51627d; }
 
-.card-prod-har-all span {
+.card-prod-har-all button {
   border-bottom: 1px dashed #fff; }
 
 .even-row {
