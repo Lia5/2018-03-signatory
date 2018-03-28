@@ -9,3 +9,7 @@
 <p><a href="https://lia5.github.io/2018-03-signatory/vacancies.html">Вакансии</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/card-prod.html">Карточка товара</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/catalog.html">Каталог</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/catalog-full.html">Полный Каталог</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/cart.html">Корзина</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/cart.html">Оформление заказа</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/cart.html">Подтверждение заказа</a></p>
