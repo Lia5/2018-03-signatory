@@ -3,6 +3,11 @@
   padding: 10px;
   text-align: center;
   margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.typical-btn:hover {
+  opacity: 0.7; 
 }
 .page-card-item {
   position: relative;
@@ -53,9 +58,10 @@ background-color: $red;
 }
 /*main-slider*/
 .page-card-main-slider {
-
+  // border-radius: 3px;
   border: 1px solid $bg-color;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 .page-card-main-slider .slider-company-arrows {
   font-size: 36px;
@@ -265,6 +271,9 @@ background-color: $red;
   background-color: $red;
   text-transform: uppercase;
 }
+// .page-card-controls-tobasket:hover {
+//   background-color: $red-hover;
+// }
 .basket-img {
   width: 21px;
   display: inline-block;
@@ -272,8 +281,10 @@ background-color: $red;
   vertical-align: middle;
   padding-bottom: 4px;
 }
-.basket-img img {
-  width: 100%;
+.basket-img .fa-shopping-cart {
+  width: 21px;
+  height: 19px;
+  margin-bottom: -5px;
 }
 .page-card-controls-tobuy {
   background-color: $gray;
@@ -343,8 +354,8 @@ background-color: $red;
   width: 100%;
   border-collapse: collapse; 
   margin-top: 25px;
-  border-left: 1px solid $border;
-  border-right: 1px solid $border;
+  // border-left: 1px solid $border;
+  // border-right: 1px solid $border;
 }
 .card-prod-har td {
   padding: 12px 16px;
@@ -364,6 +375,8 @@ background-color: $red;
   background-color: $button;
   border-left: 1px solid $button;
   border-right: 1px solid $button; 
+  text-align: center;
+  cursor: pointer;
 }
 .card-prod-har-all td:first-child {
   border-right: 1px solid $button;
@@ -442,13 +455,22 @@ background-color: $red;
 }
 .page-card-series-item-ico {
   float: right;
-  width: 26px;
-  height: 22px;
-  padding: 0 2px;
+  padding: 0 3px;
 }
-.page-card-series-item-ico img {
-  width: 100%;
-  height: 100%;
+.page-card-series-item-ico .fa-heart {
+  width: 26px;
+  height: 23px;
+}
+.fa-heart--grey path {
+  fill: $gray-date;
+}
+
+.page-card-series-item-ico .fa-signal {
+  width: 26px;
+  height: 21px;
+}
+.fa-signal--grey path {
+  fill: $gray-date;
 }
 .page-card-series-item-price-wrap {
   margin-top: 5px;
@@ -475,3 +497,40 @@ background-color: $red;
   background-color: $white;
   max-height: 388px;
 }
+.page-card-series-item:hover img,
+.page-card-watch-item:hover img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+.page-card-series-item:hover .fa-heart--red path,
+.page-card-watch-item:hover .fa-heart--red path {
+  fill: $red;
+}
+.page-card-series-item:hover .fa-signal--lilac path,
+.page-card-watch-item:hover .fa-signal--lilac path {
+  fill: $lilac;
+}
+
+
+.stars {
+  color: $red;
+}
+.page-card-controls-tobasket span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-card-main-videoslider-item {
+  border: 1px solid $bg-color;
+  // margin: 0 10px;
+}
+.card-prod-har {
+  // border-spacing
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
+table{ overflow: hidden;}

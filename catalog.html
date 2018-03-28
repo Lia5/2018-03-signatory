@@ -19,13 +19,33 @@
 	<div class="header">
 		<div class="head-first">
 			<div class="container clearfix">
-				<div class="head-first-city">
+				<div class="head-first-city col-lg-3">
+					<i class="fal fa-map-marker-alt"></i>
 					<span>Москва</span>
-					<i class="fa fa-angle-down"></i>
 				</div>
-				<div class="head-first-login">
-					<span>Войти</span>
-					<span>Зарегистрироваться</span>	
+
+				<div class="time-work col-lg-3">
+					 <i class="fal fa-clock"></i>
+					 <span>Время работы</span>
+					 <span>пн-пт c 9.00 до 18.00</span>
+				</div>
+
+				<div class="box-menu-phone col-lg-3">
+					<button type="button" class="box-menu-callback">
+						<i class="fal fa-phone-volume"></i>
+						<span>Заказать обратный звонок</span>
+					</button>
+				</div>
+				
+				<div class="wrap-head-first-login col-lg-3">
+					<div class="head-first-login">
+						<i class="fal fa-sign-in"></i>
+						<span>Войти</span>
+					</div>
+
+					<div class="head-first-login">
+						<span>Зарегистрироваться</span>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -44,19 +64,28 @@
 						<i class="fa fa-search head-search-ico"></i>
 					</form>
 				</div>
-
-					<div class="time-work col-lg-3">
-						<p>Время работы</p>
-						<p>пн-пт c 9.00 до 18.00</p>
-				</div> 
-
+				<div class="signal col-lg-3">
+					<div class="signal-box-btn">
+						<button class="signal-btn">
+							<i class="fal fa-signal"></i>
+							Сравнение
+						</button>
+					</div>
+					<div class="signal-box-btn favourites-box-btn">
+						<button class="signal-btn favourites-btn">
+							<i class="fal fa-heart"></i>
+							Избранное
+						</button>
+					</div>
+				</div>
 				<div class="order-cart col-lg-2">
 					<span class="head-basket">
-						<i class="fa fa-shopping-cart fa-shopping-cart-ico"></i>
+						<i class="fal fa-shopping-cart"></i>
+						<!-- <i class="fa fa-shopping-cart fa-shopping-cart-ico"></i> -->
 						<span class="head-basket-ico">3</span>
 					</span>
-					<span class="order-sum">10 000</span>
-					<span class="shopping-cart-ico">&#8381;</span>
+					<span class="order-sum">Корзина</span>
+					<!-- <span class="shopping-cart-ico">&#8381;</span> -->
 				</div>
 			</div>
 		</div>
@@ -91,19 +120,15 @@
 						</li>
 						<li class="page-menu__item catalog-menu">
 							<a href="" class="page-menu__link">Еще
-								<svg class="catalog-ico">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#down"></use>
-								</svg>
+								<i class="fas fa-caret-down catalog-ico"></i>
 							</a>
 						</li>
 					</ul>
-	
-					<div class="box-menu-phone">
+					<div class="page-menu-phone">
 						<a href="tel:+78000000000" class="box-menu-phone__link">
-							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<i class="fal fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
 							<span>8 (800) 000-00-00</span>
-						</a>
-						<a class="box-menu-callback" href="#">Заказать обратный звонок</a>
+						</a>	
 					</div>
 				</div>
 			</div>
@@ -302,7 +327,7 @@
 									</select>
 								</div>
 								<div class="select__item">
-									<select name="application" id="application ">
+									<select name="application" id="application">
 										<option value="" disabled="disabled" selected="selected">Область применения</option>
 										<option>Область применения1</option>
 										<option>Область применения2</option>
@@ -362,8 +387,7 @@
 									</select>
 								</div>
 								<div class="select__item">
-									<select name="socket-size" id="
-									socket-size">
+									<select name="socket-size" id="socket-size">
 										<option value="" disabled="disabled" selected="selected">Размер розетки, см</option>
 										<option>Размер розетки1</option>
 										<option>Размер розетки2</option>
@@ -388,7 +412,7 @@
 					<div class="filter-structure-main filter-structure-main-row">
 						<span class="filter-structure-main-row-all">Найдено 8293 товара</span>
 						<div class="btn-box ">
-							<button class="btn btn-catalog" type="submit">Показать</button>
+							<button type="button" class="typical-btn btn-catalog" type="submit">Показать</button>
 						</div>
 
 					</div>
@@ -401,8 +425,7 @@
 				<div class="page-catalog-sort-left">
 					<div class="page-catalog-sort-title">	Сортировать по</div>
 					<div class="sort__item">
-						<select name="sort" id="
-						sort">
+						<select name="sort" id="sort">
 							<option value="" disabled="disabled" selected="selected">---</option>
 							<option>Популярности</option>
 							<option>Дате</option>
@@ -422,224 +445,269 @@
 			</div> 
 
 			<div class="page-card-series-wrap">
-				<div class="page-card-watch clearfix page-card-watch-catalog">
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+        <div class="page-card-watch clearfix page-card-watch-catalog">
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+                <div class="page-card-series-item-price">10 000 ₽ </div>
+                <div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+                  <i class="fal fa-signal"></i>
+                </div>
+                <div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+                  <i class="fal fa-heart"></i>
+                </div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+                <div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+									<i class="fal fa-signal"></i>
 								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
+								<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+									<i class="fal fa-heart"></i>
+								</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item2.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+                <div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+									<i class="fal fa-signal"></i>
+								</div>
+								<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+									<i class="fal fa-heart"></i>
+								</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+                <div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+									<i class="fal fa-signal"></i>
+								</div>
+								<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+									<i class="fal fa-heart"></i>
+								</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
 						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+                <div class="page-card-series-item-price">10 000 ₽ </div>
+                <div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+									<i class="fal fa-signal"></i>
+								</div>
+								<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+									<i class="fal fa-heart"></i>
+								</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item2.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item2.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart-red.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item2.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item2.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart-red.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item2.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart-red.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item2.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart-red.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
-								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
-								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
+								В корзину</button>
+            </div>
+          </div>
 
-
-				</div><!--page-card-watch-catalog-->
+-Lia- Лена - i —, [28.03.18 10:48]
+<div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item2.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap page-card-watch-item-wrap-catalog">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
+								<div class="page-card-series-item-price">10 000 ₽ </div>
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
+								</div>
+								В корзину</button>
+            </div>
+          </div>
+        </div><!--page-card-watch-catalog-->
 				
 
 			</div><!--page-card-series-wrap-->
 			<div class="page-catalog-title">Показать ещё 12 товаров из 130</div>
 			<div class="pagination">
 				<span class="pagination-arrow pagination-arrow_prev">
-					<!-- <i class="fa fa-chevron-left"></i> -->
-					<svg class="next-ico">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next"></use>
-					</svg>
+					<i class="fas fa-chevron-left"></i>
 				</span>
 				<ul class="pagination__list">
 					<li class="pagination__item">
@@ -674,115 +742,123 @@
 					</li>
 				</ul>
 				<span class="pagination-arrow pagination-arrow_next">
-					<!-- <i class="fa fa-chevron-right"></i> -->
-					<svg class="next-ico">
-							<use xlink:href="#next"/>
-					</svg>
+					<i class="fas fa-chevron-right"></i>
 				</span>
 			</div>
 			<div class="page-discount-title">Вы смотрели</div> 
 			<div class="page-card-series-wrap">
-				<div class="page-card-watch clearfix">
-					<div class="page-card-watch-item-wrap">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+ 				<div class="page-card-watch clearfix">
+          <div class="page-card-watch-item-wrap">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item2.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item2.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart-red.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-					<div class="page-card-watch-item-wrap">
-						<div class="page-card-watch-item">
-							<div class="page-card-series-item-img"><img src="img/card-prod/item1.png" alt=""></div>
-							<div class="page-card-series-item-name">Смеситель</div>
-							<div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
-							<div class="page-card-series-item-price-wrap clearfix">
+								В корзину</button>
+            </div>
+          </div>
+          <div class="page-card-watch-item-wrap">
+            <div class="page-card-watch-item">
+              <div class="page-card-series-item-img"><img src="img/item1.png" alt=""></div>
+              <div class="page-card-series-item-name">Смеситель</div>
+              <div class="page-card-series-item-mark">Zorg ZR 314YF-11 BR</div>
+              <div class="page-card-series-item-price-wrap clearfix">
 								<div class="page-card-series-item-price">10 000 ₽ </div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/signal.png">
+								<div class="page-card-series-item-ico fa-signal--grey fa-signal--lilac">
+										<i class="fal fa-signal"></i>
+									</div>
+									<div class="page-card-series-item-ico fa-heart--grey fa-heart--red">
+										<i class="fal fa-heart"></i>
+									</div>
+              </div>
+              <button class="typical-btn page-card-controls-tobasket">
+								<div class="basket-img">
+									<i class="fal fa-shopping-cart"></i>
 								</div>
-								<div class="page-card-series-item-ico">
-									<img src="img/card-prod/heart.png">
-								</div>
-							</div>
-							<div class="typical-btn page-card-controls-tobasket"><div class="basket-img"><img src="img/card-prod/basket.png" alt="Корзина"></div> В корзину</div>
-						</div>
-					</div>
-
-
-				</div>
+								В корзину</button>
+            </div>
+          </div>
+        </div>
 			</div>
 			<div class="page-discount-bottom">
 				<div class="page-discount-bottom-img"><img src="img/ask.png" alt="Вопрос"></div>
 				<a href="#">Что можно улучшить на этой странице?</a>
-			</div>
-			
+			</div>	
 		</div>
-
-	
-	
-		
-
-
 		<!-- sticky-menu -->
 		<div class="footer-sticky-menu">
 			<div class="container clearfix">
 				<div class="sticky-menu">
-					<div class="sticky-menu-phone">
+					<div class="sticky-menu-phone col-lg-4">
 						<a href="tel:+78000000000" class="box-menu-phone__link">
-							<i class="fa fa-phone box-menu-phone__ico"></i>
+							<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
 							<span>8 (800) 000-00-00</span>
 						</a>
 					</div>
-					<div class="sticky-menu-box-btn">
-						<button type="button">Сравнить</button>
+					<div class="sticky-menu-box-btn col-lg-4">
+						<button type="button">Заказать звонок
+						<i class="fas fa-info"></i>
+						</button>
 					</div>
 
-					<div class="sticky-menu-box-btn">
-						<button type="button">Обратная связь</button>
+					<div class="sticky-menu-box-btn col-lg-4">
+						<button type="button">Обратная связь
+							<i class="fas fa-pencil-alt"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -801,15 +877,15 @@
 			</div>
 			<div class="footer-menu-phone">
 				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
-					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
 					<span>8 (800) 000-00-00</span>
 				</a>
 				<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
-					<i class="fa fa-phone box-menu-phone__ico"></i>
+					<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
 					<span>8 (800) 000-00-00</span>
 				</a>
 				<a href="" class="box-menu-phone__link footer-box-menu-phone__link">
-					<i class="fa fa-map-marker box-menu-phone__ico"></i>
+					<i class="fas fa-map-marker-alt box-menu-phone__ico"></i>
 					<span>г. Москва, ул. Кирова 105а</span>
 				</a>
 			</div>
@@ -817,130 +893,133 @@
 			<ul class="footer-social">
 				<li class="footer-social__item">
 					<a class="footer-social__link" href="">
-						<i class="fa fa-vk"></i>
+						<i class="fab fa-vk"></i>
 					</a>
 				</li>
 				<li class="footer-social__item">
 					<a class="footer-social__link" href="">
-						<i class="fa fa-odnoklassniki"></i>
+						<i class="fab fa-odnoklassniki"></i>
 					</a>
 				</li>
 				<li class="footer-social__item">
 					<a class="footer-social__link" href="">
-						<i class="fa fa-instagram"></i>
+						<i class="fab fa-instagram"></i>
 					</a>
 				</li>
 				<li class="footer-social__item">
 					<a class="footer-social__link" href="">
-						<i class="fa fa-facebook"></i>
+						<i class="fab fa-facebook-f"></i>
 					</a>
 				</li>
 				<li class="footer-social__item">
 					<a class="footer-social__link" href="">
-						<i class="fa fa-twitter"></i>
+						<i class="fab fa-twitter"></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 		
-		<div class="footer-item col-lg-3">
-			<ul class="footer-list">
-				<li class="footer__item footer__item_title">
-					<a href="" class="footer-link footer-link__title">
-						Интернет-Магазин
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Новости
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Отзывы
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Производители
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Условия оплаты
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Политика конфиденциальности
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Пользовательское соглашение
-					</a>
-				</li>
-			</ul>
-		</div>
+		<div class="footer-list-wrapp">
+			<div class="footer-item col-lg-4">
+				<ul class="footer-list">
+					<li class="footer__item footer__item_title">
+						<a href="" class="footer-link footer-link__title">
+							Интернет-Магазин
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Новости
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Отзывы
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Производители
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Условия оплаты
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Политика конфиденциальности
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Пользовательское соглашение
+						</a>
+					</li>
+				</ul>
+			</div>
 
-		<div class="footer-item col-lg-3">
-			<ul class="footer-list">
-				<li class="footer__item footer__item_title">
-					<a href="" class="footer-link footer-link__title">
-						Компания
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						О компании
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Вакансии
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Дизайнерам и партнерам
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Контакты
-					</a>
-				</li>
-			</ul>
-		</div>
+			<div class="footer-item col-lg-4">
+				<ul class="footer-list">
+					<li class="footer__item footer__item_title">
+						<a href="" class="footer-link footer-link__title">
+							Компания
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							О компании
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Вакансии
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Дизайнерам и партнерам
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</div>
 
-		<div class="footer-item col-lg-3">
-			<ul class="footer-list">
-				<li class="footer__item footer__item_title">
-					<a href="" class="footer-link footer-link__title">
-						Помощь покупателю
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Видео-обзоры
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Получение и возврат товара
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Установка и подключение
-					</a>
-				</li>
-				<li class="footer__item">
-					<a href="" class="footer-link">
-						Как сделать заказ
-					</a>
-				</li>
-			</ul>
+			<div class="footer-item col-lg-4">
+				<ul class="footer-list">
+					<li class="footer__item footer__item_title">
+						<a href="" class="footer-link footer-link__title">
+							Помощь покупателю
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Видео-обзоры
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Получение и возврат товара
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Установка и подключение
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer-link">
+							Как сделать заказ
+						</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
 	</div>
 </footer>
@@ -951,8 +1030,8 @@
 		<div class="box-konf">
 			<p>Вся информация на сайте принадлежит владельцам интернет-магазина sferaremonta.ru.
 			   Все права защищены. 
-               Информация размещенная на сайте sferaremonta.ru не является публичной офертой.
-            </p>
+         Информация размещенная на сайте sferaremonta.ru не является публичной офертой.
+      </p>
 		</div>
 
 		<ul class="order__list">

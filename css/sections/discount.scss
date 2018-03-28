@@ -12,15 +12,19 @@
   color: $white;
   font-size: 16px;
   background-color: $gray;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
 }
 .page-discount-info {
   margin-top: 20px;
   font-size: 16px;
   padding: 38px 42px;
   background-color: $white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
 }
 .page-discount-main {
-  width: 72%;
+  width: 68%;
   float: left;
 }
 .page-discount-main p {
@@ -35,7 +39,7 @@
 }
 
 .page-discount-up {
-  padding: 18px 0;
+  // padding: 18px 0;
   line-height: 1.8;
   color: $gray-date;
  }
@@ -57,8 +61,7 @@
 }
 
 .page-discount-right-sidebar {
-  width: 27%;
-  margin-left: 1%;
+  width: 30%;
   float: right;
 }
 .discount-right-sidebar-title {
@@ -67,9 +70,10 @@
   background-color: $red;
   padding: 16px 0;
   display: block;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 .discount-sidebar-items {
-  border: 1px solid $gray-light;
   padding: 0 22px;
 }
 .discount-sidebar-item {
@@ -86,8 +90,9 @@
   padding: 10px 0;
 }
 .page-discount-bottom-img {
-  width: 25px;
   display: inline-block;
+  vertical-align: middle;
+  width: 25px;
 }
 .page-discount-bottom-img img {
   width: 100%;
@@ -122,9 +127,20 @@
   font-style: italic;
 }
 .discount-right-sidebar-title-down {
+  color: $white;
+  text-align-last: center;
+
+  padding: 16px 0;
+  display: block;
   background-color: $lilac-color;
   font-size: 14px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .discount-right-sidebar-title-down span {
   border-bottom: 1px dashed $white;
+}
+.page-discount-right-sidebar-wrapp {
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
 }
