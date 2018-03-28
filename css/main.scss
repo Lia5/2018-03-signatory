@@ -21,9 +21,11 @@ $overlay-black: rgba(0, 0, 0, 0.3);
 @import "settings/normalize.scss";
 @import "settings/setting.scss";
 @import "settings/font-awesome.scss";
+
 // @import "settings/fa-svg-with-js.scss";
 // @import "../fontawesome/web-fontss-with-css/css/fontawesome-all.scss";
 @import "../libs/bootstrap/bootstrap.scss";
+@import "settings/fonts.scss";
 @import "../libs/slick/slick.scss";
 @import "../libs/slick/slick-theme.scss";
 @import "sections/main-slider.scss";
@@ -37,5 +39,6 @@ $overlay-black: rgba(0, 0, 0, 0.3);
 @import "sections/vacancies.scss";
 @import "sections/card-prod.scss";
 @import "sections/catalog.scss";
+@import "sections/discounts.scss";
 @import "sections/footer.scss";
 

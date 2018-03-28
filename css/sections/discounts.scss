@@ -1,0 +1,50 @@
+.page-discounts-info {
+  padding-bottom: 31px;
+}
+.page-discounts-item-wrap {
+  padding-bottom: 18px;
+}
+.page-discounts-news-item-discr {
+  padding: 10px 15px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
+.page-discounts-news-item-img {
+  max-height: 184px;
+  overflow: hidden;
+}
+.page-discounts-news-item-img img {
+  width: 100%;
+}
+.page-discounts-name {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 14px;
+  padding: 4px 0 11px 0;
+  font-weight: 600; /*500*/
+}
+.page-discounts-views {
+  padding-top: 16px;
+  padding-bottom: 0;
+  color: #999;
+}
+.page-discounts-views path {
+  fill: #000;
+}
+.page-discounts-tags {
+  font-weight: 300;
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+}
+.page-discounts-tags a {
+  color: #999;
+}
+.page-discounts-pagination {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.page-discounts-title {
+  border-radius: 3px;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
