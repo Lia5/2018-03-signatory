@@ -11948,6 +11948,59 @@ svg:not(:root) {
 .page-cart-delivery-info path {
   fill: #ccc; }
 
+.page-order-accordeon-title {
+  background-color: #4c4c4c;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 5px 40px;
+  margin-top: 20px;
+  text-decoration: none; }
+
+.page-order-accordeon-title span {
+  display: inline-block;
+  vertical-align: middle; }
+
+.page-order-accordeon-title:first-child {
+  margin-top: 0; }
+
+.page-order-accordeon-title-number {
+  font-size: 36px;
+  font-weight: 500;
+  padding-right: 16px; }
+
+/*1 form*/
+.page-order-accordeon-content form {
+  max-width: 461px; }
+
+.page-order-form-content {
+  margin-bottom: 18px; }
+
+.page-order-form-content label {
+  position: relative;
+  font-weight: normal;
+  min-width: 157px; }
+
+.page-order-form-content input {
+  border-radius: 3px;
+  border: 1px solid #9aafd1;
+  width: 300px;
+  padding: 8px; }
+
+.page-order-tel-kod {
+  position: absolute;
+  right: 0; }
+
+.required-field {
+  color: #dc383b; }
+
+.confident {
+  color: #dc383b;
+  border-bottom: 1px solid #dc383b; }
+
+.page-order-btn {
+  background-color: #dc383b; }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }

@@ -144,37 +144,63 @@
 				<div class="page-cart-info clearfix">
 					<div class="page-discount-main">
 						<div class="page-card-watch-item-wrap page-discounts-item-wrap page-cart-item-wrap ">
-							<div class="page-cart-item clearfix">
 
 
-								<div class="accordeon page-catalog-full-accordeon">
-									<div class="accordeon-title">Акриловые ванны</div>
-									<div class="accordeon-content">
+
+								<div class="accordeon page-order-accordeon">
+									<div class="accordeon-title page-order-accordeon-title">
+										<span class="page-order-accordeon-title-number">1</span>
+										<span>Контактная информация</span>
+									</div>
+									<div class="accordeon-content page-order-accordeon-content page-cart-item">
+										<form action="#" class="page-order-form" novalidate="novalidate">
+												<div class="page-order-form-content">
+													<label for="page-order-name">Имя <sup class="required-field">*</sup> </label>
+													<input type="tel" id="page-order-name" name="page-order-name" placeholder="">
+												</div>
+												<div class="page-order-form-content">	
+													<label for="page-order-email">Электронная почта <sup class="required-field">*</sup></label>
+													<input type="email" id="page-order-email" name="page-order-email">
+												</div>
+												<div class="page-order-form-content">
+													<label for="page-order-tel">Телефон <sup class="required-field">*</sup> <span class="page-order-tel-kod">+7</span> </label>
+													<input class="phone-mask" type="tel" id="page-order-tel" name="page-order-tel" placeholder="(__) ___ __ __">
+												</div>
+												<p><sup class="required-field">*</sup> Этим знаком обозначены обязательные к заполнению поля </p>
+												<div class="checkbox__item page-order-form-content">
+													<input type="checkbox" id="confident" checked="">
+													<label for="confident">Настоящим подтверждаю, что я ознакомлен и согласен с&nbsp<a class="confident" href="#">политикой конфиденциальности</a> данных ООО “Сфера ремонта”</label>
+												</div>
+												
+												<div class="pass-log-box">
+													<div class="page-order-btn">
+														<button type="submit" class="page-order-btn-form ">Перейти к следующему шагу  →</button>
+													</div>
+												</div>
+										</form>
+									</div>
+									<div class="accordeon-title page-order-accordeon-title">
+										<span class="page-order-accordeon-title-number">2</span>
+										<span>СПОСОБ ПОЛУЧЕНИЯ</span>
+										</div>
+									<div class="accordeon-content page-cart-item">
 										<p><a href="#">Отдельно стоящая</a></p>
 										<p><a href="#">Пристенная</a></p>
 										<p><a href="#">Встраиваемая</a></p>
 									</div>
-									<div class="accordeon-title">Чугунные ванны</div>
-									<div class="accordeon-content">
+									<div class="accordeon-title page-order-accordeon-title">
+										<span class="page-order-accordeon-title-number">3</span>
+										<span>СПОСОБ ОПЛАТЫ</span>
+										</div>
+									<div class="accordeon-content page-cart-item">
 										<p><a href="#">Отдельно стоящая</a></p>
 										<p><a href="#">Пристенная</a></p>
 										<p><a href="#">Встраиваемая</a></p>
 									</div>
-									<div class="accordeon-title">Стальные ванны</div>
-									<div class="accordeon-content">
-										<p><a href="#">Отдельно стоящая</a></p>
-										<p><a href="#">Пристенная</a></p>
-										<p><a href="#">Встраиваемая</a></p>
-									</div>
-									<div class="accordeon-title">Ванны из искусственного камня</div>
-									<div class="accordeon-content">
-										<p><a href="#">Отдельно стоящая</a></p>
-										<p><a href="#">Пристенная</a></p>
-										<p><a href="#">Встраиваемая</a></p>
-									</div>
+									
 								</div>
 			
-							</div>
+
 						</div><!--page-card-watch-item-wrap page-discounts-item-wrap page-cart-item-wrap -->
 	
 					</div><!--page-discount-main-->
@@ -452,6 +478,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
+<script src="libs/maskedinput/maskedinput.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>

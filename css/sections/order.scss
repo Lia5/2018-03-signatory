@@ -1,0 +1,53 @@
+.page-order-accordeon-title {
+  background-color: $gray;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 5px 40px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.page-order-accordeon-title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-order-accordeon-title:first-child {
+  margin-top: 0;
+}
+.page-order-accordeon-title-number {
+  font-size: 36px;
+  font-weight: 500;
+  padding-right: 16px;
+}
+/*1 form*/
+.page-order-accordeon-content form {
+  max-width: 461px;
+}
+.page-order-form-content {
+  margin-bottom: 18px;
+}
+.page-order-form-content label {
+  position: relative;
+  font-weight: normal;
+  min-width: 157px;
+}
+.page-order-form-content input {
+  border-radius: 3px;
+  border: 1px solid $lilac-color;
+  width: 300px;
+  padding: 8px;
+}
+.page-order-tel-kod {
+  position: absolute;
+  right: 0;
+}
+.required-field {
+  color: $red;
+}
+.confident {
+  color: $red;
+  border-bottom: 1px solid $red;
+}
+.page-order-btn {
+  background-color: $red;
+}

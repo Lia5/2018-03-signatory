@@ -266,4 +266,7 @@ counter
       }
   });
 
-
+/*maskedinput*/
+$(function(){
+  $(".phone-mask").mask("(999) 999-99-99");
+})
