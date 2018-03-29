@@ -11,5 +11,6 @@
 <p><a href="https://lia5.github.io/2018-03-signatory/catalog.html">Каталог</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/catalog-full.html">Полный Каталог</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/cart.html">Корзина</a></p>
+<!--
 <p><a href="https://lia5.github.io/2018-03-signatory/order.html">Оформление заказа</a></p>
-<p><a href="https://lia5.github.io/2018-03-signatory/order-confirm.html">Подтверждение заказа</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/order-confirm.html">Подтверждение заказа</a></p>-->
