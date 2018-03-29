@@ -7,6 +7,12 @@
   margin-top: 20px;
   text-decoration: none;
 }
+.page-order-accordeon-title::after {
+  content: none;
+}
+.page-order-accordeon-title.is-opened:after {
+  content: none;
+}
 .page-order-accordeon-title span {
   display: inline-block;
   vertical-align: middle;
@@ -50,4 +56,13 @@
 }
 .page-order-btn {
   background-color: $red;
+  color: $white;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 28px;
+  cursor: pointer;
+}
+.page-order-accordeon-content {
+  padding-bottom: 30px;
 }
