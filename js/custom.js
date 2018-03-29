@@ -213,4 +213,57 @@ $(function($){
       content.slideDown(function(){title.addClass('is-opened')});
     } 
   });
-})(jQuery);
+});
+
+/*===================
+counter
+===================*/
+    // This button will increment the value
+    $('.item-head-counter .qtyplus').click(function(e){
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name='+fieldName+']').val());
+      // If is not undefined
+      if (!isNaN(currentVal)) {
+          // Increment only if value is < 20
+          if (currentVal < 20)
+          {
+            $('input[name='+fieldName+']').val(currentVal + 1);
+            $('.item-head-counter .qtyminus').val("-").removeAttr('style');
+          }
+          else
+          {
+            $('.item-head-counter .qtyplus').val("+").css('color','#aaa');
+            $('.item-head-counter .qtyplus').val("+").css('cursor','not-allowed');
+          }
+      } else {
+          // Otherwise put a 0 there
+          $('input[name='+fieldName+']').val(1);
+      }
+  });
+  // This button will decrement the value till 0
+  $(".item-head-counter .qtyminus").click(function(e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name='+fieldName+']').val());
+      // If it isn't undefined or its greater than 0
+      if (!isNaN(currentVal) && currentVal > 1) {
+          // Decrement one only if value is > 1
+          $('input[name='+fieldName+']').val(currentVal - 1);
+          $('.item-head-counter .qtyplus').val("+").removeAttr('style');
+      } else {
+          // Otherwise put a 0 there
+          $('input[name='+fieldName+']').val(1);
+          $('input[name=quantity-d]').val(0);
+          $('.item-head-counter .qtyminus').val("-").css('color','#aaa');
+          $('.item-head-counter .qtyminus').val("-").css('cursor','not-allowed');
+      }
+  });
+
+
