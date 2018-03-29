@@ -198,7 +198,7 @@ $("input#amount-max").change(function() {
   $("#slider-range").slider("values", 1, value2);
 });
 
-$(function($){
+
 	var contents = $('.accordeon-content');
   var titles = $('.accordeon-title');
   titles.on('click',function(){
@@ -213,7 +213,7 @@ $(function($){
       content.slideDown(function(){title.addClass('is-opened')});
     } 
   });
-});
+
 
 /*===================
 counter
