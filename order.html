@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Оформление заказа</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script defer src="libs/fontawesome-pro/fontawesome-all.js"></script>
@@ -156,7 +157,7 @@
 										<form action="#" class="page-order-form" novalidate="novalidate">
 												<div class="page-order-form-content">
 													<label for="page-order-name">Имя <sup class="required-field">*</sup> </label>
-													<input type="tel" id="page-order-name" name="page-order-name" placeholder="">
+													<input type="text" id="page-order-name" name="page-order-name" placeholder="">
 												</div>
 												<div class="page-order-form-content">	
 													<label for="page-order-email">Электронная почта <sup class="required-field">*</sup></label>
@@ -183,22 +184,38 @@
 										<span class="page-order-accordeon-title-number">2</span>
 										<span>СПОСОБ ПОЛУЧЕНИЯ</span>
 									</div>
-									<div class="accordeon-content page-cart-item">
-										<div>
+									<div class="accordeon-content page-order-accordeon-content page-cart-item">
+										<div class="page-order-delivery">
 											<input type="radio" name="radio" id="radio1">
-											<label for="radio1">Uniform</label>
+											<label for="radio1">Самовывоз: г. Москва, ул. Кирова, д.105а</label>
 										</div>
-										<div>
+										<div class="page-order-delivery">
 											<input type="radio" name="radio" id="radio2">
-											<label for="radio2">Victor</label>
+											<label for="radio2">Доставка</label>
 										</div>
-										
+										<div class="page-order-delivery-more">
+											<div class="page-order-form-content page-order-delivery-content">
+												<label for="page-order-name">Улица</label>
+												<input type="text" id="page-order-street" name="page-order-street" placeholder="">
+											</div>
+											<div class="page-order-form-content page-order-delivery-content">
+												<label for="page-order-name">Дом</label>
+												<input type="text" id="page-order-home" name="page-order-home" placeholder="">
+											</div>
+											<div class="page-order-form-content page-order-delivery-content">
+												<label for="page-order-name">Квартира</label>
+												<input type="text" id="page-order-flat" name="page-order-flat" placeholder="">
+											</div>
+
+											<input type="text" id="datepicker7" class="hasDatepicker">
+										</div>
+
 									</div>
 									<div class="accordeon-title page-order-accordeon-title">
 										<span class="page-order-accordeon-title-number">3</span>
 										<span>СПОСОБ ОПЛАТЫ</span>
-										</div>
-									<div class="accordeon-content page-cart-item">
+									</div>
+									<div class="accordeon-content page-order-accordeon-content page-cart-item">
 										<p><a href="#">Отдельно стоящая</a></p>
 										<p><a href="#">Пристенная</a></p>
 										<p><a href="#">Встраиваемая</a></p>
@@ -208,7 +225,7 @@
 			
 
 						</div><!--page-card-watch-item-wrap page-discounts-item-wrap page-cart-item-wrap -->
-	
+						<input type="text" id="datepicker7" class="hasDatepicker">
 					</div><!--page-discount-main-->
 					<div class="page-card-controls page-cart-controls">
 						<div class="page-cart-controls-price">
@@ -259,6 +276,7 @@
 				<a href="#">Что можно улучшить на этой странице?</a>
 			</div>	
 		</div>
+
 		<!-- sticky-menu -->
 		<div class="footer-sticky-menu">
 			<div class="container clearfix">
@@ -485,6 +503,7 @@
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="libs/maskedinput/maskedinput.js"></script>
+<!-- <script src="libs/datepicker/datepicker-ru.js"></script> -->
 <script src="js/custom.js"></script>
 </body>
 </html>
