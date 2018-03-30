@@ -2,7 +2,8 @@ $(document).ready(function(){
   /*datepicker*/
 
   // $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
-    $( ".hasDatepicker").datepicker({});
+  $("#datepicker").datepicker();
+  $( '.hasDatepicker').datepicker();
   // $( "#datepicker7" ).datepicker({
   //   // dateFormat: "d M yy",
   //   // minDate:-1,
