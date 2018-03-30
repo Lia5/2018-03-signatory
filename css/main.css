@@ -11249,40 +11249,25 @@ table {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/**/
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-  border-bottom-right-radius: 4px; }
-
-.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
-  border-bottom-left-radius: 4px; }
-
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
-  border-top-right-radius: 4px; }
-
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
-  border-top-left-radius: 4px; }
-
-.ui-widget-content {
+/*.rang */
+.rang .ui-widget-content {
   border: 1px solid #aaaaaa;
   background: #ffffff;
   color: #222222; }
 
-.ui-widget {
+.rang .ui-widget {
   font-family: Verdana,Arial,sans-serif;
   font-size: 1.1em; }
 
-.ui-slider-horizontal {
-  height: .8em; }
-
-.ui-slider {
+.rang .ui-slider {
   position: relative;
   text-align: left; }
 
-.ui-slider-horizontal .ui-slider-range {
+.rang .ui-slider-horizontal .ui-slider-range {
   top: 0;
   height: 100%; }
 
-.ui-slider .ui-slider-range {
+.rang .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
   font-size: .7em;
@@ -11290,34 +11275,33 @@ table {
   border: 0;
   background-position: 0 0; }
 
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-  border-bottom-right-radius: 4px; }
-
-.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
-  border-bottom-left-radius: 4px; }
-
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
-  border-top-right-radius: 4px; }
-
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+.rang .ui-corner-all {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
 
-.ui-widget-header {
+.rang .ui-widget-header {
   background: #9aafd1;
   color: #222222;
   font-weight: bold; }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.rang .ui-state-default,
+.rang .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
   border: 1px solid #d3d3d3;
   background: #e6e6e6;
   font-weight: normal;
   color: #555555; }
 
-.ui-slider-horizontal .ui-slider-handle {
+.rang .ui-slider-horizontal .ui-slider-handle {
   top: -.3em;
   margin-left: -.6em; }
 
-.ui-slider .ui-slider-handle {
+.rang .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
   width: 1.2em;
@@ -11327,13 +11311,18 @@ table {
   touch-action: none; }
 
 /**/
-.ui-widget.ui-widget-content {
+.rang .ui-widget.ui-widget-content {
   height: 10px;
   margin-top: 20px;
   border: none;
   background-color: #ededed; }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, .ui-button.ui-state-disabled:hover, .ui-button.ui-state-disabled:active {
+.rang .ui-state-default,
+.rang .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.ui-button.ui-state-disabled:hover,
+.ui-button.ui-state-disabled:active {
   border-radius: 50%;
   background-color: white;
   -webkit-transform: translate(0%, -25%);

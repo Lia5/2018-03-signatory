@@ -1,13 +1,4 @@
 $(document).ready(function(){
-  /*datepicker*/
-
-  // $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
-  $("#datepicker").datepicker();
-  $( '.hasDatepicker').datepicker();
-  // $( "#datepicker7" ).datepicker({
-  //   // dateFormat: "d M yy",
-  //   // minDate:-1,
-  // });
 
 /*========================
 slick clider header
@@ -282,4 +273,7 @@ $(function(){
 })
 
 /*datepicker*/
-// $("#datepicker7").datepicker({dateFormat:"DD MM dd, yy"});
+$("#page-order-date").datepicker({
+  dateFormat:"DD, dd.mm"
+});
+$('#page-order-time').datetimepicker();
