@@ -12140,6 +12140,19 @@ svg:not(:root) {
   font-size: 1.5em;
   padding: .1em 0 0 .2em; }
 
+.page-order-delivery-more-lift input[type="radio"]:checked + label::after {
+  content: '\25CF';
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  top: 0;
+  left: 3px;
+  font-size: 17px;
+  color: #9aafd1;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }
