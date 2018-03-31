@@ -143,11 +143,8 @@
 			<button class="page-cart-back-shopping">Вернуться к корзине</button>
 
 				<div class="page-cart-info clearfix">
-					<div class="page-discount-main">
+					<div class="page-discount-main page-order-main">
 						<div class="page-card-watch-item-wrap page-discounts-item-wrap page-cart-item-wrap ">
-
-
-
 								<div class="accordeon page-order-accordeon">
 									<div class="accordeon-title page-order-accordeon-title">
 										<span class="page-order-accordeon-title-number">1</span>
@@ -194,37 +191,77 @@
 											<label for="radio2">Доставка</label>
 										</div>
 										<div class="page-order-delivery-more clearfix">
-											<div class="page-catalog-sort-left">
-												<div class="page-order-form-content page-order-delivery-content">
+											<div class="page-order-delivery-left">
+												<div class="page-order-form-content">
 													<label for="page-order-name">Улица</label>
 													<input type="text" id="page-order-street" name="page-order-street" placeholder="">
 												</div>
-												<div class="page-order-form-content page-order-delivery-content">
+												<div class="page-order-form-content">
 													<label for="page-order-name">Дата</label>
 													<input type="text" id="page-order-date" name="page-order-date" placeholder="">
 												</div>
-												<div class="page-order-form-content page-order-delivery-content">
+												<div class="page-order-form-content">
 													<label for="page-order-name">Время</label>
 													<input type="text" id="page-order-time" name="page-order-time" placeholder="" data-multiple-dates="3"
 													data-multiple-dates-separator=", ">
 												</div>
+											</div>	<!-- page-order-delivery-left -->
+										
+											<div class="page-order-delivery-right">
+												<div class="page-order-form-content">
+													<label for="page-order-name">Дом</label>
+													<input type="text" id="page-order-home" name="page-order-home" placeholder="">
+												</div>
+												<div class="page-order-form-content">
+													<label for="page-order-name">Квартира</label>
+													<input type="text" id="page-order-flat" name="page-order-flat" placeholder="">
+												</div>
+											</div><!-- page-order-delivery-right -->
+										</div><!-- page-order-delivery-more  -->
+										<div class="page-order-delivery-more clearfix">
+											<div class="">
+												<span>Подъём на этаж</span>
+												<select name="appointment" id="appointment">
+													<option value="" disabled="disabled" selected="selected">--</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+													<option>11 и выше</option>
+												</select>
+												<div class="page-order-delivery-more-lift">
+													<input type="radio" name="radio-lift" id="radio3">
+													<label for="radio3">Есть лифт</label>
+												</div>
+												<div class="page-order-delivery-more-lift">
+													<input type="radio" name="radio-lift" id="radio3">
+													<label for="radio3">Нет лифта</label>
+												</div>
+												<div class="page-order-delivery-more-lift">
+													<input type="radio" name="radio-lift" id="radio3">
+													<label for="radio3">Подъём на этаж не требуется</label>
+												</div>
+													
+											</div>	<!-- page-order-delivery-left -->
+										
 
+										</div><!-- page-order-delivery-more  -->
 
-											</div>
-											
-											<div class="page-order-form-content page-order-delivery-content">
-												<label for="page-order-name">Дом</label>
-												<input type="text" id="page-order-home" name="page-order-home" placeholder="">
-											</div>
-											<div class="page-order-form-content page-order-delivery-content">
-												<label for="page-order-name">Квартира</label>
-												<input type="text" id="page-order-flat" name="page-order-flat" placeholder="">
-											</div>
-											
-		
+										<div class="page-order-delivery-more clearfix">
+											<div class="page-order-delivery-left">
+												<p>Стоимость доставки: уточнит менеджер</p>
+											</div>	<!-- page-order-delivery-left -->
+										
+											<div class="page-order-delivery-right">
+												<p>Стоимость подъема: <span>300 ₽</span></p>
 
-					
-										</div>
+											</div><!-- page-order-delivery-right -->
+										</div><!-- page-order-delivery-more  -->
 
 									</div>
 									<div class="accordeon-title page-order-accordeon-title">

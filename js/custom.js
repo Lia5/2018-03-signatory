@@ -277,7 +277,6 @@ $("#page-order-date").datepicker({
   dateFormat:"DD, dd.mm"
 });
 $("#page-order-time").datepicker({
-  multipleDates: true,
   multipleDates: 2,
   dateFormat:"dd.mm"
 });

@@ -11937,6 +11937,9 @@ svg:not(:root) {
 .page-cart-delivery-info path {
   fill: #ccc; }
 
+.page-order-main {
+  width: 76%; }
+
 .page-order-accordeon-title {
   background-color: #4c4c4c;
   color: #fff;
@@ -11969,7 +11972,8 @@ svg:not(:root) {
   max-width: 461px; }
 
 .page-order-form-content {
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  display: inline-block; }
 
 .page-order-form-content label {
   position: relative;
@@ -11980,7 +11984,7 @@ svg:not(:root) {
   border-radius: 3px;
   border: 1px solid #9aafd1;
   width: 300px;
-  padding: 8px; }
+  padding: 5px; }
 
 .page-order-tel-kod {
   position: absolute;
@@ -12008,7 +12012,6 @@ svg:not(:root) {
 /*acc2*/
 .page-order-delivery {
   position: relative;
-  margin-bottom: 26px;
   border: 1px solid #b3b3b3; }
 
 .page-order-delivery label {
@@ -12018,8 +12021,8 @@ svg:not(:root) {
   width: 100%;
   padding: 16px 60px; }
 
-.page-order-delivery:last-child {
-  margin-bottom: 0; }
+.page-order-delivery:first-child {
+  margin-bottom: 26px; }
 
 .page-order-delivery input[type="radio"],
 .page-order-delivery label::before {
@@ -12070,6 +12073,72 @@ svg:not(:root) {
 
 .page-order-form-content input {
   width: auto; }
+
+/*page-order-delivery-more*/
+.page-order-delivery-more {
+  padding: 30px 20px;
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  font-size: 12px; }
+
+.page-order-delivery-left {
+  float: left;
+  width: 61%; }
+
+.page-order-delivery-right {
+  float: right;
+  width: 39%; }
+
+#page-order-street {
+  width: 355px; }
+
+.page-order-delivery-more label {
+  min-width: 49px;
+  padding-right: 13px;
+  margin-bottom: 0; }
+
+#page-order-home,
+#page-order-flat {
+  width: 77px; }
+
+#page-order-date,
+#page-order-time {
+  width: 150px; }
+
+.page-order-delivery-more:nth-child(2n) {
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.page-order-delivery-more-lift {
+  position: relative;
+  display: inline-block; }
+
+.page-order-delivery-more-lift input[type="radio"],
+.page-order-delivery-more-lift label::before {
+  position: absolute;
+  top: 50%;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  outline: none; }
+
+.page-order-delivery-more-lift label {
+  padding: 0 30px; }
+
+.page-order-delivery-more-lift input[type="radio"] + label::before {
+  border-radius: 50%; }
+
+.page-order-delivery-more-lift label::before {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  left: 6px;
+  top: -2px;
+  border: 2px solid #9aafd1;
+  border-radius: 4px;
+  color: #9aafd1;
+  content: '';
+  font-size: 1.5em;
+  padding: .1em 0 0 .2em; }
 
 .footer-sticky-menu {
   background: #4c4c4c;
