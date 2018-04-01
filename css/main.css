@@ -12263,8 +12263,8 @@ svg:not(:root) {
   padding: 16px 55px 12px; }
 
 /*acc done*/
-.page-order-end-main {
-  padding-bottom: 30px; }
+.page-order-confirm-main {
+  padding-bottom: 20px; }
 
 .page-order-list {
   margin-top: 20px; }
@@ -12304,6 +12304,23 @@ svg:not(:root) {
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
   box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
   border-radius: 3px; }
+
+.page-order-finish-info {
+  background-color: #fff;
+  padding: 40px 40px 47px;
+  text-align: center; }
+
+.page-order-finish-info p {
+  padding: 15px; }
+
+.page-order-finish-info p:last-child {
+  padding: 30px 15px 0; }
+
+.page-order-finish-info .fa-check-circle {
+  font-size: 60px; }
+
+.page-order-finish-info path {
+  fill: #cccccc; }
 
 .footer-sticky-menu {
   background: #4c4c4c;
