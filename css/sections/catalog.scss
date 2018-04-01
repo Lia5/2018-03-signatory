@@ -27,13 +27,13 @@
 }
 
 .catalog-brands-wrap::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
   background-color: $bg-color;
 }
 
 .catalog-brands-wrap::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: $lilac-color;
+  background-color: $lilac;
 }
 .catalog-items {
   display: inline-block;
