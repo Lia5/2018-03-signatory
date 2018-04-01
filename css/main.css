@@ -12322,6 +12322,77 @@ svg:not(:root) {
 .page-order-finish-info path {
   fill: #cccccc; }
 
+.page-compare {
+  background-color: #fff;
+  padding: 39px 40px; }
+
+.page-select-compare {
+  display: inline-block;
+  font-size: 16px; }
+
+.select-compare {
+  border-radius: 3px;
+  border: 1px solid #9aafd1;
+  padding: 5px 29px;
+  padding-right: 80px;
+  -webkit-appearance: none;
+  -moz-appearance: radio-container;
+  appearance: none; }
+
+.page-select-compare.select-arrow::before {
+  width: 43px;
+  height: 33px; }
+
+.page-select-compare.select-arrow::after {
+  right: 16px; }
+
+.page-compare-count {
+  position: absolute;
+  right: 61px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #dc383b; }
+
+.page-compare-clean {
+  padding: 8px 0; }
+
+.page-compare-cross {
+  display: inline-block; }
+
+.page-compare-cross path {
+  fill: #dc383b; }
+
+.page-compare-clean-txt {
+  font-size: 14px;
+  display: inline-block; }
+
+.page-compare-img {
+  max-width: 231px;
+  display: inline-block;
+  margin-right: 16px; }
+
+.page-compare-img img {
+  width: 100%; }
+
+/*table*/
+.page-compare-har {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #f4f4f4;
+  overflow: auto;
+  margin-top: 20px; }
+
+.page-compare-har td:first-child {
+  width: 247px; }
+
+.page-compare-har td {
+  border-right: 1px solid #f4f4f4; }
+
+.page-compare-har td:last-child {
+  border-right: none; }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }
