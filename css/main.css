@@ -11702,12 +11702,12 @@ svg:not(:root) {
 
 .page-catalog-full-accordeon::-webkit-scrollbar {
   left: 0;
-  width: 12px;
+  width: 5px;
   background-color: #ededed; }
 
 .page-catalog-full-accordeon::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9aafd1; }
+  background-color: #5674a5; }
 
 /*accordeon*/
 .page-catalog-full-accordeon {
