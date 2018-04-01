@@ -10815,7 +10815,8 @@ button.close {
   text-decoration: line-through; }
 
 .page-card-controls-price-figure {
-  font-size: 32px; }
+  font-size: 32px;
+  color: #5674a5; }
 
 .page-card-controls-tobasket {
   background-color: #dc383b;
