@@ -1,0 +1,104 @@
+.user-cab_title {
+	margin: 20px 0;
+}
+
+.main-nav-box-pic-wrapp {
+	position: relative;
+	height: 279px;
+	background-color: rgb(154, 175, 209);
+}
+.main-nav-box-wrapp {
+	height: 100%;
+	width: 100%;
+	opacity: .15;
+	border-radius: 3px;
+	background-size: cover;
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
+
+.wrap-author {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	// padding: 30px;  border-radius: 50%;
+  border: 5px solid $white;
+  width: 95px;
+  height: 95px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 3;
+	opacity: 1;
+	border-radius: 50%;
+}
+// .wrapp-author img {
+// 	display: none;
+// }
+.author-txt {
+	position: absolute;
+	width: 43%;
+	color: $white;
+	bottom: 30px;
+	left: 30px;
+}
+.author-txt p {
+	padding-top: 5x;
+	padding-bottom: 5px;
+}
+.page-user-cab-main {
+	padding: 40px 60px;
+	width: 55%;
+}
+.page-user-cab-main .page-order-form-content {
+	display: block;
+	position: relative;
+}
+.page-user-cab-main label {
+	display: block;
+}
+.page-user-cab-main input {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid $gray;
+	border-radius: 0;
+}
+.page-user-cab-self {
+  width: 90%;
+	float: left;
+}
+.page-user-cab-self .fa-pencil-alt {
+	position: absolute;
+	right: 0;
+	top: 70%;
+	transform: translate(0, -50%) ;
+}
+.page-user-cab-self path {
+	fill: $gray;
+}
+.page-order-btn-wrap {
+	text-align: right;
+}
+.page-user-btn {
+  position: static;
+}
+.page-user-cab-right {
+	width: 20%;
+	float: right;
+	text-align: center;
+	background-color: $color-footer;
+
+}
+.page-user-cab-right-wrap {
+	font-size: 60px;
+}
+.page-user-cab-right-wrap path {
+	fill: $white;
+}
+.page-user-cab-right-item {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.page-user-cab-right-item p {
+	color: $white;
+}
