@@ -12518,6 +12518,38 @@ svg:not(:root) {
 .page-user-cab-right-item p {
   color: #fff; }
 
+.page-confident-info {
+  padding: 30px 40px;
+  background-color: #fff; }
+
+ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li; }
+
+ol > li:before {
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, ".") ". "; }
+
+.confident-mark-list {
+  list-style-type: disc;
+  padding-left: 45px; }
+
+.confident-mark-list--link {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  color: #dc383b; }
+
+.confident-mark-list--link li {
+  padding-bottom: 15px; }
+
+.confident-mark-list--link a {
+  color: #dc383b;
+  text-decoration: underline; }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }
