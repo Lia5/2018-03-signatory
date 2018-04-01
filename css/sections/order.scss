@@ -1,5 +1,6 @@
 .page-order-main {
   width: 76%;
+  position: relative;
 }
 .page-order-accordeon-title {
   background-color: $gray;
@@ -27,6 +28,34 @@
   font-size: 36px;
   font-weight: 500;
   padding-right: 16px;
+}
+.page-order-accordeon-title-name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 91%;
+}
+.page-order-accordeon-title-info {
+  display: none;
+  font-size: 12px;
+  text-transform: none;
+}
+.page-order-accordeon-title--done .page-order-accordeon-title-info {
+  display: block;
+}
+.page-order-accordeon-title .fa-pencil-alt {
+    display: none;
+}
+.page-order-accordeon-title--done .fa-pencil-alt {
+    display: inline-block;
+}
+.page-order-accordeon-title--done {
+  background-color: $red;
+}
+.page-order-accordeon-title-info span {
+  min-width: 206px;
+}
+.page-order-accordeon-title .fa-pencil-alt {
+  vertical-align: middle;
 }
 /*1 form*/
 .page-order-accordeon-content form {
@@ -81,6 +110,7 @@
   display: block;
   width: 100%;
   padding: 16px 60px;
+  font-weight: normal;
 }
 .page-order-delivery:first-child {
   margin-bottom: 26px;
@@ -195,6 +225,7 @@
   min-width: 49px;
   padding-right: 13px;
   margin-bottom: 0;
+  font-weight: normal;
 }
 #page-order-home,
 #page-order-flat {
@@ -281,4 +312,19 @@
 }
 .page-order-delivery-left p {
   padding: 12px 0 0 0;
+}
+/*acc3*/
+.page-order-delivery-cash {
+  margin-bottom: 10px;
+}
+.page-order-delivery-cash:first-child {
+  margin-bottom: 10px;
+}
+.page-order-delivery-cash label {
+  padding: 16px 55px 12px;
+
+}
+/*acc done*/
+.page-order-accordeon-title--done {
+
 }

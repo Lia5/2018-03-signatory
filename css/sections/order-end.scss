@@ -1,0 +1,42 @@
+.page-order-end-main {
+  padding-bottom: 30px;
+}
+.page-order-list {
+  margin-top: 20px;
+}
+.page-order-list-items {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  border-radius: 3px;
+  background-color: $white;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
+.page-order-list-items th {
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: $gray;
+  border: 1px solid $gray;
+}
+.page-order-list-items td {
+  border: 1px solid #f4f4f4;
+  padding: 10px 40px;
+}
+.page-order-list-items td:nth-child(2),
+.page-order-list-items td:nth-child(3) {
+  text-align: center;
+}
+.page-order-btn {
+  position: absolute;
+  right: 20px;
+  margin-top: 21px;
+  font-size: 16px;
+  padding: 10px 45px;
+  color: #fff;
+  background-color: #51627d;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  border-radius: 3px;
+}
