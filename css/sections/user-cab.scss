@@ -1,5 +1,5 @@
 .user-cab_title {
-	margin: 20px 0;
+	margin-bottom: 20px;
 }
 
 .main-nav-box-pic-wrapp {
@@ -46,8 +46,8 @@
 	padding-bottom: 5px;
 }
 .page-user-cab-main {
-	padding: 40px 67px;
-	width: 55%;
+	background-color: $white;
+	overflow-y: hidden;
 }
 .page-user-cab-main .page-order-form-content {
 	display: block;
@@ -90,7 +90,9 @@
 	font-style: normal;
 }
 .page-user-cab-self {
-  width: 86%;
+	padding: 40px 67px;
+	width: 68%;
+	max-width: 559px;
 	float: left;
 }
 .page-user-cab-self .fa-pen {
@@ -109,12 +111,13 @@
   position: static;
 }
 .page-user-cab-right {
-	width: 18%;
+	width: 24%;
 	max-width: 200px;
 	float: right;
 	text-align: center;
-	background-color: $color-footer;
-
+	background-color: $lilac-color;
+	height: 100vh;
+	min-height: 764px;
 }
 .page-user-cab-right-wrap {
 	font-size: 44px;

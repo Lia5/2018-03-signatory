@@ -12419,7 +12419,7 @@ svg:not(:root) {
   border-right: none; }
 
 .user-cab_title {
-  margin: 20px 0; }
+  margin-bottom: 20px; }
 
 .main-nav-box-pic-wrapp {
   position: relative;
@@ -12461,8 +12461,8 @@ svg:not(:root) {
   padding-bottom: 5px; }
 
 .page-user-cab-main {
-  padding: 40px 67px;
-  width: 55%; }
+  background-color: #fff;
+  overflow-y: hidden; }
 
 .page-user-cab-main .page-order-form-content {
   display: block;
@@ -12507,7 +12507,9 @@ svg:not(:root) {
   font-style: normal; }
 
 .page-user-cab-self {
-  width: 86%;
+  padding: 40px 67px;
+  width: 68%;
+  max-width: 559px;
   float: left; }
 
 .page-user-cab-self .fa-pen {
@@ -12528,11 +12530,13 @@ svg:not(:root) {
   position: static; }
 
 .page-user-cab-right {
-  width: 18%;
+  width: 24%;
   max-width: 200px;
   float: right;
   text-align: center;
-  background-color: #86a2d0; }
+  background-color: #9aafd1;
+  height: 100vh;
+  min-height: 764px; }
 
 .page-user-cab-right-wrap {
   font-size: 44px; }
