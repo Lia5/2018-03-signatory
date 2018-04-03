@@ -12463,7 +12463,10 @@ svg:not(:root) {
 .page-user-cab-main {
   background-color: #fff;
   overflow-y: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35); }
 
 .page-user-cab-main .page-order-form-content {
   display: block;
@@ -12596,45 +12599,66 @@ svg:not(:root) {
   width: 74%;
   max-width: 630px; }
 
-.page-user-cab-izb-items {
-  margin: 43px 0 20px; }
+/*tab-filter*/
+.user-cab-box {
+  overflow: hidden; }
 
-.page-user-cab-izb-item {
-  border-bottom: 1px solid #e8e8e8; }
+.filterDiv {
+  display: none;
+  /* Hidden by default */ }
 
-.izb-img-wrap {
-  width: 37px;
-  margin: 15px 18px;
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block; }
+
+/* Style the buttons */
+.user-cab-tab-item {
+  border: none;
+  outline: none;
+  cursor: pointer;
   display: inline-block;
-  vertical-align: middle; }
+  font-size: 16px;
+  color: #4c4c4c; }
 
-.izb-img-wrap img {
-  width: 100%; }
+/* Add a light grey background on mouse-over */
+.user-cab-tab-item:hover {
+  background-color: #ddd; }
 
-.page-card-series-item-wrap {
-  display: inline-block;
-  vertical-align: middle;
-  width: 57%; }
+/* Add a dark background to the active button */
+.user-cab-tab-item.active {
+  color: #5674a5; }
 
-.page-card-series-item-wrap .page-card-series-item-name,
-.page-card-series-item-wrap .page-card-series-item-mark {
-  float: none; }
+/**/
+.page-user-cab-ist-order {
+  margin-top: 38px;
+  margin-bottom: 63px; }
 
-.page-user-izb-name {
-  color: #999;
-  padding-top: 0; }
+.page-user-cab-ist-order-title {
+  background-color: #e8e8e8; }
 
-.page-user-izb-price {
+.page-user-order-title-numb {
+  float: left;
+  padding-right: 22px; }
+
+.page-user-order-title-date {
+  float: left;
+  padding-right: 22px; }
+
+.page-user-order-title-del {
+  float: right;
+  color: #5674a5; }
+
+.page-user-cab-ist-order-status {
+  padding-top: 15px; }
+
+.page-user-cab-order-status {
+  float: left;
+  color: #99cc33; }
+
+.page-user-cab-order-total {
+  float: right;
   font-size: 20px;
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: right;
-  width: 26%; }
-
-.page-user-cab-self-izb {
-  width: 74%;
-  max-width: 630px; }
+  color: #202020; }
 
 .page-confident-info {
   padding: 30px 40px;
