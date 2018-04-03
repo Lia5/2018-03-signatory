@@ -16,5 +16,7 @@
 <p><a href="https://lia5.github.io/2018-03-signatory/order-finish.html">Заказ оформлен</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/compare.html">Сравнение товаров</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/user-cab.html">Личный кабинет</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/user-cab-izb.html">Личный кабинет-Избранное</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/user-cab-ist.html">Личный кабинет-История</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/confident.html">Политика конфиденциальности</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/receiving-return.html">Получение и возврат товаров</a></p>

@@ -12462,7 +12462,8 @@ svg:not(:root) {
 
 .page-user-cab-main {
   background-color: #fff;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  position: relative; }
 
 .page-user-cab-main .page-order-form-content {
   display: block;
@@ -12510,7 +12511,7 @@ svg:not(:root) {
   padding: 40px 67px;
   width: 68%;
   max-width: 559px;
-  float: left; }
+  display: inline-block; }
 
 .page-user-cab-self .fa-pen {
   position: absolute;
@@ -12532,11 +12533,15 @@ svg:not(:root) {
 .page-user-cab-right {
   width: 24%;
   max-width: 200px;
-  float: right;
   text-align: center;
   background-color: #9aafd1;
-  height: 100vh;
-  min-height: 764px; }
+  min-height: 360px;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%; }
 
 .page-user-cab-right-wrap {
   font-size: 44px; }
@@ -12550,6 +12555,86 @@ svg:not(:root) {
 
 .page-user-cab-right-item p {
   color: #fff; }
+
+.page-user-cab-izb-items {
+  margin: 43px 0 20px; }
+
+.page-user-cab-izb-item {
+  border-bottom: 1px solid #e8e8e8; }
+
+.izb-img-wrap {
+  width: 37px;
+  margin: 15px 18px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.izb-img-wrap img {
+  width: 100%; }
+
+.page-card-series-item-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 57%; }
+
+.page-card-series-item-wrap .page-card-series-item-name,
+.page-card-series-item-wrap .page-card-series-item-mark {
+  float: none; }
+
+.page-user-izb-name {
+  color: #999;
+  padding-top: 0; }
+
+.page-user-izb-price {
+  font-size: 20px;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 26%; }
+
+.page-user-cab-self-izb {
+  width: 74%;
+  max-width: 630px; }
+
+.page-user-cab-izb-items {
+  margin: 43px 0 20px; }
+
+.page-user-cab-izb-item {
+  border-bottom: 1px solid #e8e8e8; }
+
+.izb-img-wrap {
+  width: 37px;
+  margin: 15px 18px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.izb-img-wrap img {
+  width: 100%; }
+
+.page-card-series-item-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 57%; }
+
+.page-card-series-item-wrap .page-card-series-item-name,
+.page-card-series-item-wrap .page-card-series-item-mark {
+  float: none; }
+
+.page-user-izb-name {
+  color: #999;
+  padding-top: 0; }
+
+.page-user-izb-price {
+  font-size: 20px;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 26%; }
+
+.page-user-cab-self-izb {
+  width: 74%;
+  max-width: 630px; }
 
 .page-confident-info {
   padding: 30px 40px;

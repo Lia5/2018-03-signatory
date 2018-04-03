@@ -48,6 +48,7 @@
 .page-user-cab-main {
 	background-color: $white;
 	overflow-y: hidden;
+	position: relative;
 }
 .page-user-cab-main .page-order-form-content {
 	display: block;
@@ -93,7 +94,8 @@
 	padding: 40px 67px;
 	width: 68%;
 	max-width: 559px;
-	float: left;
+	// float: left;
+	display: inline-block;
 }
 .page-user-cab-self .fa-pen {
 	position: absolute;
@@ -113,11 +115,18 @@
 .page-user-cab-right {
 	width: 24%;
 	max-width: 200px;
-	float: right;
+	// float: right;
 	text-align: center;
 	background-color: $lilac-color;
-	height: 100vh;
-	min-height: 764px;
+	// height: 100vh;
+	// min-height: 764px;
+	min-height: 360px;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+  right: 0;
+  height: 100%;
 }
 .page-user-cab-right-wrap {
 	font-size: 44px;

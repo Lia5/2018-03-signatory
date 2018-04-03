@@ -1,0 +1,41 @@
+.page-user-cab-izb-items {
+  margin: 43px 0 20px;
+}
+.page-user-cab-izb-item {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.izb-img-wrap {
+  width: 37px;
+  margin: 15px 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.izb-img-wrap img {
+  width: 100%;
+}
+.page-card-series-item-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 57%;
+}
+.page-card-series-item-wrap .page-card-series-item-name,
+.page-card-series-item-wrap .page-card-series-item-mark {
+  float: none;
+}
+.page-user-izb-name {
+  color: #999;
+  padding-top: 0;
+}
+.page-user-izb-price {
+  font-size: 20px;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 26%;
+}
+.page-user-cab-self-izb {
+  width: 74%;
+  max-width: 630px;
+}
