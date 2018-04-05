@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторизация</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script defer src="libs/fontawesome-pro/fontawesome-all.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+	<p>Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a></p>
+<![endif]-->
+<div class="wrapper">
+	<div class="header">
+		<div class="head-first">
+			<div class="container clearfix">
+				<div class="head-first-city col-lg-3">
+					<i class="fal fa-map-marker-alt"></i>
+					<span>Москва</span>
+				</div>
+
+				<div class="time-work col-lg-3">
+					 <i class="fal fa-clock"></i>
+					 <span>Время работы</span>
+					 <span>пн-пт c 9.00 до 18.00</span>
+				</div>
+
+				<div class="box-menu-phone col-lg-3">
+					<button type="button" class="box-menu-callback">
+						<i class="fal fa-phone-volume"></i>
+						<span>Заказать обратный звонок</span>
+					</button>
+				</div>
+				
+				<div class="wrap-head-first-login col-lg-3">
+					<div class="head-first-login">
+						<i class="fal fa-sign-in"></i>
+						<span>Войти</span>
+					</div>
+
+					<div class="head-first-login">
+						<span>Зарегистрироваться</span>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="head-two">
+			<div class="container clearfix">
+				<div class="head-two-login col-lg-3">
+					<a class="head-two-login__link">
+						<img src="img/icons/logo.png" alt="Логотип">
+					</a>
+				</div>
+
+				<div class="head-search col-lg-3">
+					<form action="#" class="head-search-form">
+						<input type="search" placeholder="Поиск товаров">
+						<i class="fa fa-search head-search-ico"></i>
+					</form>
+				</div>
+				<div class="signal col-lg-3">
+					<div class="signal-box-btn">
+						<button class="signal-btn">
+							<i class="fal fa-signal"></i>
+							Сравнение
+						</button>
+					</div>
+					<div class="signal-box-btn favourites-box-btn">
+						<button class="signal-btn favourites-btn">
+							<i class="fal fa-heart"></i>
+							Избранное
+						</button>
+					</div>
+				</div>
+				<div class="order-cart col-lg-2">
+					<span class="head-basket">
+						<i class="fal fa-shopping-cart"></i>
+						<!-- <i class="fa fa-shopping-cart fa-shopping-cart-ico"></i> -->
+						<span class="head-basket-ico">3</span>
+					</span>
+					<span class="order-sum">Корзина</span>
+					<!-- <span class="shopping-cart-ico">&#8381;</span> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container">
+				<div class="box-menu clearfix">
+					<div class="box-menu-catalog">
+						<div class="menu-catalog__title menu-gamburger">
+							<p>Каталог товаров</p>
+							<span></span>
+						</div>
+					</div>
+					<ul class="page-menu">
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">О компании</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Акции</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Оплата</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Доставка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Установка</a>
+						</li>
+						<li class="page-menu__item">
+							<a href="" class="page-menu__link">Контакты</a>
+						</li>
+						<li class="page-menu__item catalog-menu">
+							<a href="" class="page-menu__link">Еще
+								<i class="fas fa-caret-down catalog-ico"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="page-menu-phone">
+						<a href="tel:+78000000000" class="box-menu-phone__link">
+							<i class="fal fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
+							<span>8 (800) 000-00-00</span>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-how-choose">
+		<div class="container clearfix">
+			<div class="page-discount-title user-cab_title">
+				<p>Авторизация</p>
+			</div>
+
+			<div class="main-nav-box">
+				<ul class="avtoriz-items">
+					<li class="avtoriz-item avtoriz-item--active"><a href="#">Вход <i class="fal fa-chevron-right"></i></a></li>
+					<li class="avtoriz-item"><a href="#">Регистрация <i class="fal fa-chevron-right"></i></a></li>
+					<li class="avtoriz-item"><a href="#">Вспомнить пароль <i class="fal fa-chevron-right"></i></a></li>
+				</ul>
+			</div>
+
+
+			<div class="main ">
+				<div class="page-user-cab-main clearfix">
+					<div class="page-user-cab-self page-user-cab-self-izb">
+		
+							<form action="#" class="page-order-form" novalidate="novalidate">
+								<div class="page-order-form-content">	
+									<label for="page-order-email">Электронная почта <sup class="required-field">*</sup></label>
+									<input type="email" id="page-order-email" name="page-order-email">
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-order-tel">Телефон <sup class="required-field">*</sup> <span class="page-order-tel-kod">+7</span> </label>
+									<input class="phone-mask" type="tel" id="page-order-tel" name="page-order-tel" placeholder="(__) ___ __ __">
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-order-pass">Пароль <sup class="required-field">*</sup> </label>
+									<input type="text" id="page-user-pass" name="page-user-pass" placeholder="●●●●●●●●●">
+									</div>
+								<div class="checkbox__item page-order-form-content">
+									<input type="checkbox" id="remember" checked="">
+									<label for="remember">Запомнить меня</label>
+								</div>
+									
+
+							</form>
+
+								
+						
+						
+					</div><!-- page-user-cab-self -->
+					<div class="page-user-cab-right page-avtoriz-right">
+						<p>Для авторизации на сайте введите
+								ваш адрес электронной почты
+								или телефон и пароль,
+								указанные при регистрации. </p>
+
+
+
+					</div><!-- /.page-user-cab-right -->
+				</div>
+				
+
+
+				
+
+				<div class="page-discount-bottom">
+					<div class="page-discount-bottom-img"><img src="img/icons/ask.png" alt="Вопрос"></div>
+					<a href="#">Что можно улучшить на этой странице?</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+
+
+
+</div>
+<!-- end wrapper -->
+
+
+<div class="footer-wrap">
+	<!-- sticky-menu -->
+	<div class="footer-sticky-menu">
+		<div class="container clearfix">
+			<div class="sticky-menu">
+				<div class="sticky-menu-phone col-lg-4">
+					<a href="tel:+78000000000" class="box-menu-phone__link">
+						<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
+						<span>8 (800) 000-00-00</span>
+					</a>
+				</div>
+				<div class="sticky-menu-box-btn col-lg-4">
+					<button type="button">Заказать звонок
+					<i class="fas fa-info"></i>
+					</button>
+				</div>
+
+				<div class="sticky-menu-box-btn col-lg-4">
+					<button type="button">Обратная связь
+						<i class="fas fa-pencil-alt"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">	
+			<div class="container clearfix">
+			<div class="footer-item col-lg-3">
+				<div class="footer-logo">
+					<img src="img/icons/logo-footer.png" alt="">
+				</div>
+				<div class="footer-menu-phone">
+					<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+						<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
+						<span>8 (800) 000-00-00</span>
+					</a>
+					<a href="tel:+78000000000" class="box-menu-phone__link footer-box-menu-phone__link">
+						<i class="fas fa-phone box-menu-phone__ico box-menu-phone__ico-trs"></i>
+						<span>8 (800) 000-00-00</span>
+					</a>
+					<a href="" class="box-menu-phone__link footer-box-menu-phone__link">
+						<i class="fas fa-map-marker-alt box-menu-phone__ico"></i>
+						<span>г. Москва, ул. Кирова 105а</span>
+					</a>
+				</div>
+
+				<ul class="footer-social">
+					<li class="footer-social__item">
+						<a class="footer-social__link" href="">
+							<i class="fab fa-vk"></i>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a class="footer-social__link" href="">
+							<i class="fab fa-odnoklassniki"></i>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a class="footer-social__link" href="">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a class="footer-social__link" href="">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a class="footer-social__link" href="">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="footer-list-wrapp">
+				<div class="footer-item col-lg-4">
+					<ul class="footer-list">
+						<li class="footer__item footer__item_title">
+							<a href="" class="footer-link footer-link__title">
+								Интернет-Магазин
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Новости
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Отзывы
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Производители
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Условия оплаты
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Политика конфиденциальности
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Пользовательское соглашение
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-item col-lg-4">
+					<ul class="footer-list">
+						<li class="footer__item footer__item_title">
+							<a href="" class="footer-link footer-link__title">
+								Компания
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								О компании
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Вакансии
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Дизайнерам и партнерам
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-item col-lg-4">
+					<ul class="footer-list">
+						<li class="footer__item footer__item_title">
+							<a href="" class="footer-link footer-link__title">
+								Помощь покупателю
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Видео-обзоры
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Получение и возврат товара
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Установка и подключение
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer-link">
+								Как сделать заказ
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			</div>
+	</footer>
+
+
+	<div class="footer-bottom-box">
+		<div class="container clearfix">
+			<div class="box-konf">
+				<p>Вся информация на сайте принадлежит владельцам интернет-магазина sferaremonta.ru.
+				   Все права защищены. 
+		       Информация размещенная на сайте sferaremonta.ru не является публичной офертой.
+		    </p>
+			</div>
+
+			<ul class="order__list">
+				<li class="order__item">
+					<a href="" class="order__link sprite-VISA"></a>
+				</li>
+				<li class="order__item">
+					<a href="" class="order__link sprite-mastercard"></a>
+				</li>
+				<li class="order__item">
+					<a href="" class="order__link sprite-Yandex"></a>
+				</li>
+				<li class="order__item">
+					<a href="" class="order__link sprite-Qiwi"></a>
+				</li>
+				<li class="order__item">
+					<a href="" class="order__link sprite-Sber"></a>
+				</li>
+				<li class="order__item">
+					<a href="" class="order__link sprite-alfa"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
+
+
+
+<!--JAVA SCRIPT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/maskedinput/maskedinput.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
