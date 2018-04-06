@@ -12705,14 +12705,11 @@ ol > li:before {
   width: 60%;
   padding: 0;
   max-width: 542px;
-  margin-bottom: 276px;
-  text-align: right; }
-
-.page-avtoriz-self .page-order-form-content {
-  text-align: left; }
+  margin-bottom: 276px; }
 
 .page-avtoriz-self form {
-  padding: 40px 39px 17px 36px;
+  position: relative;
+  padding: 40px 39px 50px 36px;
   border-right: 1px dashed #9aafd1; }
 
 .avtoriz-items {
@@ -12775,6 +12772,8 @@ ol > li:before {
   opacity: 0.5; }
 
 .page-avtoriz-btn {
+  position: absolute;
+  right: 39px;
   padding: 12px 20px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
@@ -12807,6 +12806,20 @@ ol > li:before {
   max-width: none;
   background-color: transparent;
   color: #4c4c4c; }
+
+.page-registr-self {
+  margin-bottom: 85px; }
+
+.page-order-form .iamur {
+  text-align: left; }
+
+.page-registr-btn {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.page-registr-required-field {
+  padding: 12px 0 7px;
+  text-align: right; }
 
 .footer-sticky-menu {
   background: #4c4c4c;
