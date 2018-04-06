@@ -78,9 +78,12 @@
   opacity: 0.5;
 
 }
+.page-avtoriz-btn-wrap {
+  position: relative;
+}
 .page-avtoriz-btn {
   position: absolute;
-  right: 39px;
+  right: 0;
   padding: 12px 20px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);

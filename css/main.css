@@ -12771,9 +12771,12 @@ ol > li:before {
   color: #4c4c4c;
   opacity: 0.5; }
 
+.page-avtoriz-btn-wrap {
+  position: relative; }
+
 .page-avtoriz-btn {
   position: absolute;
-  right: 39px;
+  right: 0;
   padding: 12px 20px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
@@ -12820,6 +12823,16 @@ ol > li:before {
 .page-registr-required-field {
   padding: 12px 0 7px;
   text-align: right; }
+
+.page-remember-pass-or {
+  font-weight: 500;
+  color: #5674a5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px; }
+
+.page-remember-pass-self {
+  margin-bottom: 468px; }
 
 .footer-sticky-menu {
   background: #4c4c4c;
