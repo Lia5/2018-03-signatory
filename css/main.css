@@ -12834,6 +12834,12 @@ ol > li:before {
 .page-remember-pass-self {
   margin-bottom: 468px; }
 
+.page-remember-pass-right {
+  padding-left: 17px; }
+
+.page-remember-pass-right p {
+  margin-bottom: 20px; }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }
