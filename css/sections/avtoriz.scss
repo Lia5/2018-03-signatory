@@ -8,6 +8,10 @@
   padding: 0;
   max-width: 542px;
   margin-bottom: 276px;
+  text-align: right;
+}
+.page-avtoriz-self .page-order-form-content {
+  text-align: left;
 }
 .page-avtoriz-self form {
   padding: 40px 39px 17px 36px; 
@@ -76,8 +80,29 @@
   opacity: 0.5;
 
 }
-
-
+.page-avtoriz-btn {
+  padding: 12px 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+  box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+}
+.page-avtoriz-btn path {
+  fill: $white;
+}
+.page-avtoriz-form-content #page-user-pass {
+  padding-right: 40px;
+}
+.page-avtoriz-form-content {
+  position: relative;
+}
+.page-avtoriz-form-content .fa-eye-slash {
+  position: absolute;
+  right: 15px;
+  top: 9px;
+}
+.page-avtoriz-form-content .fa-eye-slash path {
+  fill: $lilac-color;
+}
 /*right*/
 .page-avtoriz-right {
   margin-top: 40px;

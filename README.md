@@ -21,3 +21,5 @@
 <p><a href="https://lia5.github.io/2018-03-signatory/confident.html">Политика конфиденциальности</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/receiving-return.html">Получение и возврат товаров</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/avtoriz.html">Авторизация</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/registr.html">Регистрация</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/remember-pass.html">Вспомнить пароль</a></p>
