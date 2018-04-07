@@ -12840,6 +12840,51 @@ ol > li:before {
 .page-remember-pass-right p {
   margin-bottom: 20px; }
 
+.page-video-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc; }
+
+.page-video-item:first-child {
+  padding-top: 0; }
+
+.page-video-vid {
+  display: inline-block;
+  width: 25%;
+  margin-right: 3%; }
+
+.page-video-vid iframe {
+  width: 100%; }
+
+.page-video-right {
+  display: inline-block;
+  width: 71%;
+  vertical-align: top; }
+
+.page-video-item-title {
+  color: #5674a5;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 10px 0 15px; }
+
+.page-video-text {
+  color: #999;
+  font-size: 14px; }
+
+.page-video-views {
+  margin-top: 12px; }
+
+.page-video-views .fa-eye {
+  font-size: 17px; }
+
+.page-video-views span {
+  color: #999;
+  font-size: 12px;
+  vertical-align: middle; }
+
+.pagination-video {
+  padding-bottom: 0; }
+
 .footer-sticky-menu {
   background: #4c4c4c;
   padding: 7px 0; }
