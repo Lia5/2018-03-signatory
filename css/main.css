@@ -12841,6 +12841,7 @@ ol > li:before {
   margin-bottom: 20px; }
 
 .page-video-item {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc; }
@@ -12850,6 +12851,12 @@ ol > li:before {
 
 .page-video-vid {
   display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   width: 25%;
   margin-right: 3%; }
 
@@ -12857,8 +12864,9 @@ ol > li:before {
   width: 100%; }
 
 .page-video-right {
+  padding-left: 33%;
   display: inline-block;
-  width: 71%;
+  width: 100%;
   vertical-align: top; }
 
 .page-video-item-title {
@@ -13041,5 +13049,83 @@ ol > li:before {
   width: 75%;
   float: right;
   padding-left: 25px; }
+
+.disable-desktop {
+  display: none; }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%; }
+  .disable-desktop {
+    display: inline-block; }
+  .disable-planshet {
+    display: none; }
+  .page-discount-info {
+    margin-top: 0;
+    padding: 32px 60px; }
+  .pagination {
+    margin-bottom: 0; }
+  .pagination__item {
+    width: 20px; }
+  .pagination__link {
+    line-height: 1; }
+  .pagination-arrow {
+    width: 20px;
+    height: 25px;
+    padding: 3px; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; }
+  .page-discount-title {
+    font-size: 14px;
+    padding: 7px 14px; }
+  .page-discount-info {
+    padding: 0 14px 38px; }
+  .page-catalog-title {
+    padding: 6px 20px; } }
+
+@media screen and (max-width: 1200px) {
+  .page-video-item {
+    width: 49%;
+    float: left;
+    width: 45%; }
+  .page-video-item:nth-child(2n-1) {
+    padding-right: 9%;
+    width: 54%; }
+  .page-video-right {
+    width: 100%;
+    padding-left: 0; }
+  .page-video-vid {
+    position: static;
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin-bottom: 15px; }
+  .page-video-item-title {
+    color: #666; }
+  .page-video-views path {
+    fill: #999; }
+  .page-video-more {
+    float: right;
+    color: #5674a5;
+    font-size: 12px; }
+  .page-video-item:first-child {
+    padding-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .page-video-item:nth-child(2n-1),
+  .page-video-item {
+    width: 100%; }
+  .page-video-item:first-child,
+  .page-video-item {
+    padding-top: 0; }
+  .page-video-item-title {
+    margin-top: 21px; }
+  .page-video-item:nth-child(2n-1) {
+    padding-right: 0; }
+  .page-video-text {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */

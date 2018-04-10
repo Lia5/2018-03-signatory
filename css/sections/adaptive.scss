@@ -3,3 +3,55 @@
 //     width: 1200px;
 //   }
 // }
+.disable-desktop {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .disable-desktop {
+    display: inline-block;
+  }
+  .disable-planshet {
+    display: none;  
+  }
+  .page-discount-info {
+    margin-top: 0;
+    padding: 32px 60px;
+  }
+  .pagination {
+    margin-bottom: 0;
+  }
+  .pagination__item {
+    width: 20px;
+  }
+  .pagination__link {
+    line-height: 1;
+  }
+  .pagination-arrow {
+    width: 20px;
+    height: 25px;
+    padding: 3px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .page-discount-title {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+  .page-discount-info {
+    padding: 0 14px 38px;
+  }
+  .page-catalog-title {
+    padding: 6px 20px;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  
+}
