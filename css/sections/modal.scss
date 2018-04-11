@@ -1,0 +1,156 @@
+.popup-box {
+  position: absolute;
+  border-radius: 5px;
+  background: #fff;
+  display: none;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  z-index: 9999999;
+  font-size: 14px;
+  overflow: hidden;
+  width: 800px;
+}
+.popup-box-1 {
+  padding: 38px 189px 62px 235px;
+}
+
+.popup-box .close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: Arial, Helvetica, sans-serif;  
+  font-weight: bold;
+  cursor: pointer;
+  color: #434343;
+  padding: 7px;
+  font-size: 26px;
+  opacity: 1;
+}
+
+.popup-box .close:hover path {
+  fill: #434343;
+}
+
+#blackout {
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 999999;
+  left: 0;
+  display: none;
+}
+.popup-cross path {
+  fill: #ccc;
+}
+.popup-box .fa-question-circle {
+  position: absolute;
+  font-size: 366px;
+  left: -138px;
+  top: 40px;
+}
+.popup-box .fa-question-circle path {
+  fill: $bg-color;
+}
+.popup-title {
+  text-transform: uppercase;
+}
+.popup-title-1 {
+  font-size: 18px;
+  color: $popup-title;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+.popup-intro {
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  margin: 10px 0;
+}
+.popup-main {
+  margin: 28px 0;
+}
+.popup-btn {
+  position: absolute;
+  right: 0;
+  padding: 7px 20px;
+}
+.popup-main-1 .page-order-tel-kod {
+  position: absolute;
+  left: -19px;
+  top: 31px;
+}
+.popup-form-1 {
+  padding-left: 27px;
+}
+/*popup-2*/
+.popup-box-2 {
+  width: 700px!important;
+}
+.popup-title-2 {
+  font-size: 16px;
+  background-color: $popup-title;
+  color: $white;
+  padding: 9px 40px;
+}
+.popup-form-2 {
+  padding: 0 40px;
+}
+.select-popup {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+.modal-select {
+  margin-bottom: 18px;
+  display: inline-block;
+}
+.modal-select::before {
+  width: 31px;
+  height: 31px;
+}
+.modal-select::after {
+  content: '';
+  width: 0;
+  position: absolute;
+  right: 9px;
+}
+.modal-form-content:nth-child(2n) {
+  margin-right: 33px;
+}
+.modal-form-content input {
+  min-width: 200px;
+}
+.modal-form-content:nth-child(2n+1) label {
+  min-width: 80px;
+}
+.modal-form-content:nth-child(2n+1) input {
+  min-width: 162px;
+  width: 162px;
+}
+.modal-form-content label {
+  min-width: 120px;
+}
+.modal-form-txtarea label {
+  vertical-align: top;
+}
+.modal-2-btn {
+  position: static;
+  padding: 10px 33px;
+  text-transform: uppercase;
+}
+.modal-2-btn-wrap {
+  display: inline-block;
+  float: right;
+}
+.modal-2-content {
+  display: inline-block;
+  width: 75%;
+}
+.modal-form-txtarea {
+  width: 100%;
+}
+.modal-form-txtarea textarea {
+  width: 78%;
+  max-width: 500;
+}

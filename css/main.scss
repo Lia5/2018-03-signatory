@@ -16,6 +16,7 @@ $button: #51627d;
 $border: #f4f4f4;
 $overlay-black: rgba(0, 0, 0, 0.3);
 $green: #99cc33;
+$popup-title: #51627d;
 
 
 // laout
@@ -60,7 +61,10 @@ $green: #99cc33;
 @import "sections/video.scss";
 
 @import "sections/footer.scss";
+@import "sections/modal.scss";
 
 @import "sections/adaptive.scss";
 @import "sections/adaptive-video.scss";
+@import "sections/adaptive-catalog.scss";
+@import "sections/adaptive-cart.scss";
 @import "sections/adaptive-user.scss";

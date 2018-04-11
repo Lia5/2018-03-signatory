@@ -136,9 +136,16 @@
 .page-user-cab-right-wrap path {
 	fill: $white;
 }
+
 .page-user-cab-right-item {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.page-user-cab-right-item:first-child {
+	padding-top: 40px;
+}
+.page-user-cab-right-item a {
+	display: block;
 }
 .page-user-cab-right-item p {
 	color: $white;
