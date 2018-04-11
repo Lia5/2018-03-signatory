@@ -152,5 +152,41 @@
 }
 .modal-form-txtarea textarea {
   width: 78%;
-  max-width: 500;
+  max-width: 500px;
+}
+/*popup-3*/
+.popup-box-3 {
+  width: 580px!important;
+}
+.modal-3-form-email {
+  vertical-align: top;
+  margin-bottom: 35px;
+}
+.modal-3-form-email label {
+  display: block;
+}
+.modal-3-form-txtarea textarea{
+  width: 100%;
+}
+.modal-3-form-email:nth-child(2n+1) input {
+  min-width: 230px;
+  width: 230px;
+}
+.modal-3-form-content {
+  display: inline-block;
+  width: 53%;
+  padding: 0 21px 0 26px;
+  margin-bottom: 0;
+  color: #666;
+}
+.modal-3-form-content:nth-child(2n) {
+    margin-right: 0;
+}
+.modal-3-content {
+  font-size: 12px;
+  width: 67%;
+}
+.modal-3-confident {
+  color: $color-footer;
+  border-bottom: 1px solid $color-footer;
 }

@@ -300,7 +300,8 @@
 			</div>
 			<div class="page-discount-bottom">
 				<div class="page-discount-bottom-img"><img src="img/icons/ask.png" alt="Вопрос"></div>
-				<a href="#">Что можно улучшить на этой странице?</a> </div>	
+				<a class="popup-link-3" href="#">Что можно улучшить на этой странице?</a>
+			</div>	
 		</div>
 		<!-- sticky-menu -->
 		<div class="footer-sticky-menu">
@@ -521,7 +522,6 @@
 </div>
 <!--MODAL-->
 <!-- <a class="popup-link-1" href="">Заказать звонок</a> -->
- 
 <div class="popup-box popup-box-1" id="popup-box-1">
 		<i class="far fa-question-circle"></i>
 	<div class="close popup-cross">
@@ -543,23 +543,18 @@
 				<label for="modal-1-tel">Телефон<span class="page-order-tel-kod">+7</span> </label>
 				<input class="phone-mask" type="tel" id="modal-1-tel" name="modal-1-tel" placeholder="(__) ___ __ __">
 			</div>
-
 			<div class="checkbox__item page-order-form-content">
 				<input type="checkbox" id="modal-1-confident" checked="">
 				<label for="modal-1-confident">Настоящим подтверждаю, что я ознакомлен и согласен с&nbsp;<a class="confident" href="#">политикой конфиденциальности</a> данных ООО “Сфера ремонта”</label>
 			</div>
-			
 			<div class="page-avtoriz-btn-wrap">
 				<button type="button" class="page-card-item-descr-more page-avtoriz-btn popup-btn">Отправить</button>
 			</div>
-
 		</form>
 	</div>
-    
 </div>
 <!--MODAL-2-->
 <!-- <a class="popup-link-2" href="">Обратная связь</a> -->
- 
 <div class="popup-box popup-box-2" id="popup-box-2">
 	<div class="close popup-cross">
 		<i class="fas fa-times"></i>
@@ -583,12 +578,12 @@
 				<input type="text" id="modal-2-name" name="modal-2-name">
 			</div>
 			<div class="page-order-form-content modal-form-content">
-				<label for="page-user-email">E-mail <sup class="required-field">*</sup> </label>
-				<input type="text" id="page-user-email" name="page-user-email" placeholder="">
+				<label for="modal-2-email">E-mail <sup class="required-field">*</sup> </label>
+				<input type="text" id="modal-2-email" name="modal-2-email" placeholder="">
 			</div>
 			<div class="page-order-form-content modal-form-content">
-				<label for="page-registr-secname">Отчество</label>
-				<input type="text" id="page-registr-secname" name="page-registr-secname">
+				<label for="modal-2-secname">Отчество</label>
+				<input type="text" id="modal-2-secname" name="modal-2-secname">
 			</div>
 			<div class="page-order-form-content modal-form-content">
 				<label for="modal-2-tel">Телефон<span class="page-order-tel-kod">+7</span> </label>
@@ -602,15 +597,50 @@
 				<input type="checkbox" id="modal-2-confident" checked="">
 				<label for="modal-2-confident">Настоящим подтверждаю, что я ознакомлен и согласен с&nbsp;<a class="confident" href="#">политикой конфиденциальности</a> данных ООО “Сфера ремонта”</label>
 			</div>
-			
 			<div class="page-avtoriz-btn-wrap modal-2-btn-wrap">
 				<button type="button" class="page-card-item-descr-more page-avtoriz-btn popup-btn modal-2-btn">Отправить</button>
 			</div>
-
 		</form>
 	</div>
-    
 </div>
+<!--MODAL-3-->
+<!-- <a class="popup-link-3" href="">Что можно улучшить на этой странице </a> -->
+<div class="popup-box popup-box-3" id="popup-box-3">
+	<div class="close popup-cross">
+		<i class="fas fa-times"></i>
+	</div>
+	<div class="popup-title popup-title-2">
+		<p>Что можно улучшить на этой странице</p>
+	</div>
+	<div class="popup-main">
+		<form action="#" class="page-order-form popup-form-2" novalidate="novalidate">
+			<div class="page-order-form-content modal-form-content modal-3-form-email">
+				<label for="modal-3-email">E-mail <sup class="required-field">*</sup> </label>
+				<input type="text" id="modal-3-email" name="modal-3-email" placeholder="">
+			</div>
+			<div class="page-order-form-content modal-form-content modal-3-form-content">
+				<p>Пожалуйста, укажите Ваш e-mail.
+						Мы быстрее исправим ошибку,
+						если сможем связаться с Вами
+						для уточнения информации.</p>
+			</div>
+			<div class="page-order-form-content modal-form-content modal-form-txtarea modal-3-form-txtarea">
+				<label for="modal-3-soob">Сообщение <sup class="required-field">*</sup></label>
+				<textarea class="modal-3-soob" rows="6" cols="75" name="text"></textarea>
+			</div>
+			<div class="checkbox__item page-order-form-content modal-2-content modal-3-content">
+				<p>Нажимая кнопку «Отправить», Вы соглашаетесь c
+						правилами <a class="confident modal-3-confident" href="#">Политики конфиденциальности Компании.</a></p>
+			</div>
+			<div class="page-avtoriz-btn-wrap modal-2-btn-wrap">
+				<button type="button" class="page-card-item-descr-more page-avtoriz-btn popup-btn modal-2-btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
 
 <!--JAVA SCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
