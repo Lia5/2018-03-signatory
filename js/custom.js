@@ -49,8 +49,11 @@ slick clider page-card-main-videoslider
     // autoplaySpeed: 3000,
     arrows: true,
     adaptiveHeight: true,    
-    prevArrow: '<i class="fa fa-angle-left slider-company-arrows slider-company_arrow-left"></i>',
-    nextArrow: '<i class="fa fa-angle-right slider-company-arrows slider-company_arrow-right"></i>',
+    // prevArrow: '<i class="fa fa-angle-left slider-company-arrows slider-company_arrow-left"></i>',
+    // nextArrow: '<i class="fa fa-angle-right slider-company-arrows slider-company_arrow-right"></i>',
+    prevArrow: '<svg class="svg-inline--fa fa-chevron-left fa-w-8 slider-company-arrows slider-company_arrow-left slick-arrow" style="" data-fa-processed="" data-prefix="fal" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"></path></svg>',
+    nextArrow: '<svg class="svg-inline--fa fa-chevron-right fa-w-8 slider-company-arrows slider-company_arrow-right slick-arrow" style="" data-fa-processed="" data-prefix="fal" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"></path></svg>',
+ 
     dots: false,
   });
 

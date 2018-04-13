@@ -269,3 +269,106 @@
   margin-right: -50%;
   transform: translate(-50%, 0) 
 }
+/*popup-6*/
+.popup-box-6 {
+  width: 600px!important;
+  left: 50%!important;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  padding: 40px;
+  text-align: center;
+}
+.popup-box-6 .fa-check-circle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.popup-box-6 .fa-check-circle path {
+  fill: $lilac-color;
+}
+.popup-main p {
+  color: #999;
+}
+.modal-6-btn-wrap {
+  display: inline-block;
+}
+.modal-6-btn {
+  padding-right: 16px;
+  padding-left: 16px; 
+}
+.modal-6-btn-wrap:nth-child(3) {
+  margin-right: 30px;
+}
+/*popup-7*/
+.popup-box-7 {
+  width: 420px!important;
+  left: 50%!important;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+.select-name-light {
+  color: #999;
+}
+.modal-7-delivery-wrap {
+  margin: 10px 0 25px 0;
+}
+p.modal-7-form-intro {
+  color: #333;
+}
+.modal-7-delivery {
+  border: none;
+  font-size: 13px;
+}
+.modal-7-delivery label {
+  padding: 2px 5px 2px 20px;
+}
+.modal-7-delivery:first-child {
+  margin-bottom: 0;
+}
+.modal-7-delivery label::before {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  left: 0;
+  top: 1px;
+}
+.modal-7-delivery input[type="radio"]:checked + label::after {
+  width: 7px;
+  height: 5px;
+  top: 5px;
+  left: 4px;
+  border: 2px solid #9aafd1;
+  border-top: none;
+  border-right: none;
+}
+.modal-7-select select {
+  width: 100%;
+  margin: 5px 0;
+}
+.modal-7-select::before {
+  top: 25px;
+}
+.modal-7-select::after {
+  top: 44px;
+}
+#modal-7-tel {
+  width: 100%;
+}
+.modal-7-form-content:nth-child(2n) {
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+.modal-7-confirm {
+  color: #1a3a6b;
+  font-size: 13px;
+  cursor: pointer;
+}
+.modal-7-confirm a {
+  color: #1a3a6b;
+}
+.modal-7-btn {
+  padding: 8px 48px;
+}
+.modal-7-btn-wrap {
+  margin: 5px auto 40px;
+  text-align: center;
+}
