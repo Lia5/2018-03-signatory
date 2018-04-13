@@ -13472,6 +13472,35 @@ p.modal-7-form-intro {
 .modal-8-section-txt {
   margin-top: 43px; }
 
+/*popup-9*/
+.popup-box-9 {
+  width: 285px !important;
+  top: 42px !important;
+  right: 20% !important;
+  left: auto !important; }
+
+.popup-link-9 {
+  cursor: pointer; }
+
+.popup-form-9 {
+  padding: 0 20px; }
+
+.modal-9-form-content {
+  font-size: 12px;
+  color: #4c4c4c;
+  position: relative; }
+
+.modal-9-form-content input {
+  width: 100%; }
+
+.modal-9-form-content .fa-eye-slash {
+  position: absolute;
+  right: 15px;
+  top: 30px; }
+
+.modal-9-form-content .fa-eye-slash path {
+  fill: #9aafd1; }
+
 .disable-desktop {
   display: none; }
 
