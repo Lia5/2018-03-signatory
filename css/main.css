@@ -13090,7 +13090,7 @@ ol > li:before {
   fill: #434343; }
 
 #blackout {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   overflow: hidden;
@@ -13264,7 +13264,7 @@ ol > li:before {
   width: 100%; }
 
 .modal-4-form label,
-.modal-form-content:nth-child(2n+1) label {
+.modal-4-form-content:nth-child(2n+1) label {
   min-width: 105px; }
 
 .modal-4-form textarea {
@@ -13434,6 +13434,43 @@ p.modal-7-form-intro {
 .modal-7-btn-wrap {
   margin: 5px auto 40px;
   text-align: center; }
+
+/*popup-8*/
+.popup-box-8 {
+  width: 785px !important;
+  left: 50% !important;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+.modal-8-main {
+  padding: 0 40px; }
+
+.modal-8-section a {
+  color: #666699; }
+
+.modal-8-header {
+  margin-bottom: 40px; }
+
+.modal-8-img {
+  display: inline-block;
+  width: 22%;
+  margin-right: 5%;
+  vertical-align: top; }
+
+.modal-8-img img {
+  width: 100%; }
+
+.modal-8-txt {
+  display: inline-block;
+  width: 72%; }
+
+.modal-7-form-intro {
+  margin-bottom: 17px; }
+
+.modal-8-section-txt {
+  margin-top: 43px; }
 
 .disable-desktop {
   display: none; }
