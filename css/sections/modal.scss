@@ -436,3 +436,53 @@ padding: 0 20px;
 .modal-9-form-content .fa-eye-slash path {
   fill: $lilac-color;
 }
+.modal-9-form-content-remember {
+  width: 61%;
+}
+.modal-9-btn-wrap {
+  display: inline-block;
+}
+.modal-9-btn-wrap .page-avtoriz-btn {
+  position: static;
+  padding: 7px 17px;
+}
+.popup-9-soc {
+  text-align: center;
+}
+.popup-9-soc-items {
+  text-align: center;
+  margin: 10px 0;
+}
+.soc-item {
+  display: inline-block;
+  margin: 1px;
+}
+.soc-item a {
+  display: block;
+  padding: 5px;
+  color: $white;
+  min-width: 35px;
+  text-align: center;
+}
+.soc-item-vk a {
+  background-color: #507299;
+}
+.soc-item-fb a {
+  background-color: #365899;
+}
+.soc-item-g a {
+  background-color: #db4437;
+}
+.soc-item-tw a {
+  background-color: #1da1f2;
+}
+.soc-item-ya a {
+  background-color: #d35148;
+}
+.soc-item-mail a {
+  background-color: #168de2;
+}
+
+.popup-9-forgot-pass {
+  float: right;
+}
