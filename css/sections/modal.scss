@@ -482,7 +482,9 @@ padding: 0 20px;
 .soc-item-mail a {
   background-color: #168de2;
 }
-
+.soc-item a:hover {
+  opacity: 0.6;
+}
 .popup-9-forgot-pass {
   float: right;
 }
