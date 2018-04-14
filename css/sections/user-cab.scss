@@ -140,6 +140,7 @@
 .page-user-cab-right-item {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	cursor: pointer;
 }
 .page-user-cab-right-item:first-child {
 	padding-top: 40px;
@@ -149,4 +150,32 @@
 }
 .page-user-cab-right-item p {
 	color: $white;
+}
+
+
+/*acc*/
+.accordeon {
+	// width: 50%; 
+	// font-family: helvetica, sans-serif
+}
+.page-user-cab .accordeon-title {
+	background-color: $lilac-color;
+	text-align: center;
+  // padding: 10px;
+  // cursor: pointer;
+  // border-bottom: 1px solid #e6e6e6;
+  // margin: 0;
+}
+
+.accordeon-content-visible {
+  display: block;
+}
+.user-tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.user-tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+.page-user-cab-main-planshet {
+	display: none;
 }

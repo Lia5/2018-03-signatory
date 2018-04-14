@@ -31,20 +31,20 @@
 				</div>
 
 				<div class="box-menu-phone col-lg-3">
-					<button type="button" class="box-menu-callback">
+					<button type="button" class="box-menu-callback popup-link-1">
 						<i class="fal fa-phone-volume"></i>
 						<span>Заказать обратный звонок</span>
 					</button>
 				</div>
 				
 				<div class="wrap-head-first-login col-lg-3">
-					<div class="head-first-login">
+					<div class="head-first-login popup-link-9">
 						<i class="fal fa-sign-in"></i>
 						<span>Войти</span>
 					</div>
 
 					<div class="head-first-login">
-						<span>Зарегистрироваться</span>	
+						<span><a href="registr.html">Зарегистрироваться</a></span>	
 					</div>
 				</div>
 			</div>
@@ -66,16 +66,16 @@
 				</div>
 				<div class="signal col-lg-3">
 					<div class="signal-box-btn">
-						<button class="signal-btn">
+						<a href="compare.html" class="signal-btn">
 							<i class="fal fa-signal"></i>
 							Сравнение
-						</button>
+						</a>
 					</div>
 					<div class="signal-box-btn favourites-box-btn">
-						<button class="signal-btn favourites-btn">
+						<a href="user-cab.html" class="signal-btn favourites-btn">
 							<i class="fal fa-heart"></i>
 							Избранное
-						</button>
+						</a>
 					</div>
 				</div>
 				<div class="order-cart col-lg-2">
@@ -84,7 +84,7 @@
 						<!-- <i class="fa fa-shopping-cart fa-shopping-cart-ico"></i> -->
 						<span class="head-basket-ico">3</span>
 					</span>
-					<span class="order-sum">Корзина</span>
+					<span class="order-sum"><a href="cart.html">Корзина</a> </span>
 					<!-- <span class="shopping-cart-ico">&#8381;</span> -->
 				</div>
 			</div>
@@ -135,7 +135,7 @@
 		</div>
 	</div>
 
-	<div class="page-how-choose">
+	<div class="page-how-choose page-user-cab">
 		<div class="container clearfix">
 			<div class="page-discount-title user-cab_title">
 				<p>Личный кабинет</p>
@@ -144,108 +144,478 @@
 			<div class="main-nav-box">
 				<div class="main-nav-box-pic-wrapp">
 					<div class="main-nav-box-wrapp" style="background-image: url(img/qw.jpg);">
-						
 					</div>
-
 					<div class="wrap-author" style="background-image: url(img/qw.jpg);">
 					</div>
 					<div class="author-txt">
 						<p>Инокентий Петрович</p>
 						<p>Заказов: <span>2</span></p>
 						<p>В избранном: <span>5</span></p>
-
 					</div>
-					
 				</div>
 			</div>
 
 
 			<div class="main ">
-				<div class="page-user-cab-main clearfix">
-					<div class="page-user-cab-self">
-						<div class="page-order-form-content">
-							<label for="page-user-tel">Телефон </label>
-							<input class="phone-mask" type="text" id="page-user-tel" name="page-user-tel" placeholder="7 900 000 00 00">
-							<i class="fal fa-pen"></i>
+				<div class="page-user-cab-main page-user-cab-main-planshet  clearfix">
+					<div class="accordeon">
+						<div class="accordeon-title page-user-cab-right-item is-opened">
+							<div class="page-user-cab-right-wrap">
+								<i class="fal fa-address-card"></i>
+							</div>
+							<p>Личные данные</p>
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-email">E-mail <sup class="required-field">*</sup> </label>
-							<input type="text" id="page-user-email" name="page-user-email" placeholder="innokentiy@mymail.com">
-							<i class="fal fa-pen"></i>
+
+						<div class="accordeon-content accordeon-content-visible">
+							<div class="page-user-cab-self">
+								<div class="page-order-form-content">
+									<label for="page-user-tel">Телефон </label>
+									<input class="phone-mask" type="text" id="page-user-tel" name="page-user-tel" placeholder="7 900 000 00 00">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-email">E-mail <sup class="required-field">*</sup> </label>
+									<input type="text" id="page-user-email" name="page-user-email" placeholder="innokentiy@mymail.com">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-pass">Пароль <sup class="required-field">*</sup> </label>
+									<input type="text" id="page-user-pass" name="page-user-pass" placeholder="●●●●●●●●●">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-date">Дата рождения </label>
+									<input type="text" id="page-user-date" name="page-user-date" placeholder="">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-name">Имя <sup class="required-field">*</sup> </label>
+									<input type="text" id="page-user-name" name="page-user-name" placeholder="Иннокентий">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-fio">Фамилия <sup class="required-field">*</sup> </label>
+									<input type="text" id="page-user-fio" name="page-user-fio" placeholder="Петрович">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-form-content">
+									<label for="page-user-nik">Никнейм </label>
+									<input type="text" id="page-user-nik" name="page-user-nik" placeholder="">
+									<i class="fal fa-pen"></i>
+								</div>
+								<div class="page-order-btn-wrap">
+									<button type="button" class="page-order-btn page-user-btn">Сохранить</button>
+								</div>
+								<p>Дата регистрации</p>
+								<p>12.12.2017</p>
+							</div><!-- page-user-cab-self -->
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-pass">Пароль <sup class="required-field">*</sup> </label>
-							<input type="text" id="page-user-pass" name="page-user-pass" placeholder="●●●●●●●●●">
-							<i class="fal fa-pen"></i>
+						<div class="accordeon-title page-user-cab-right-item">
+							<div class="page-user-cab-right-wrap">
+								<i class="fal fa-heart"></i>
+							</div>
+							<p>Избранное</p>
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-date">Дата рождения </label>
-							<input type="text" id="page-user-date" name="page-user-date" placeholder="">
-							<i class="fal fa-pen"></i>
+						<div class="accordeon-content">
+							<div class="page-user-cab-self page-user-cab-self-izb">
+								<p>В избранном <span>5</span> товаров на сумму <span>50 000</span> ₽</p>
+								<ul class="page-user-cab-izb-items">
+									<li class="page-user-cab-izb-item clearfix">
+										<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+										<div class="page-card-series-item-wrap">
+											<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+											<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+										</div>
+										<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+									</li>
+									<li class="page-user-cab-izb-item clearfix">
+										<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+										<div class="page-card-series-item-wrap">
+											<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+											<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+										</div>
+										<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+									</li>
+									<li class="page-user-cab-izb-item clearfix">
+										<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+										<div class="page-card-series-item-wrap">
+											<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+											<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+										</div>
+										<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+									</li>
+									<li class="page-user-cab-izb-item clearfix">
+										<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+										<div class="page-card-series-item-wrap">
+											<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+											<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+										</div>
+										<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+									</li>
+								</ul>
+								<div class="page-order-btn-wrap">
+									<button type="button" class="page-order-btn page-user-btn">Купить все</button>
+								</div>
+								
+							</div><!-- page-user-cab-self -->
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-name">Имя <sup class="required-field">*</sup> </label>
-							<input type="text" id="page-user-name" name="page-user-name" placeholder="Иннокентий">
-							<i class="fal fa-pen"></i>
+
+						<div class="accordeon-title page-user-cab-right-item">
+							<div class="page-user-cab-right-wrap">
+								<i class="fal fa-clipboard"></i>
+							</div>
+							<p>История заказов</p>
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-fio">Фамилия <sup class="required-field">*</sup> </label>
-							<input type="text" id="page-user-fio" name="page-user-fio" placeholder="Петрович">
-							<i class="fal fa-pen"></i>
+
+						<div class="accordeon-content">
+							<div class="page-user-cab-self page-user-cab-self-izb">
+								<!-- Control buttons -->
+								<div id="user-cab-tab-list">
+									<button class="user-cab-tab-item active" onclick="filterSelection('all')">Все заказы (<span>2</span>)</button>
+									<button class="user-cab-tab-item" onclick="filterSelection('user-cab-in-work')"> В исполнении (<span>1</span>)</button>
+									<button class="user-cab-tab-item" onclick="filterSelection('user-cab-finish')"> Завершённые (<span>1</span>)</button>
+								</div>
+								<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+								<div class="user-cab-box">
+									<div class="filterDiv user-cab-in-work page-user-cab-ist-order">
+										<div class="page-user-cab-ist-order-title clearfix">
+											<div class="page-user-order-title-numb">
+												<p>Заказ <span>В-05154621</span></p>
+											</div>
+											<div class="page-user-order-title-date">
+												<p>от <span>2018-03-02 15:15:15</span></p>
+											</div>
+											<div class="page-user-order-title-del">
+												<button>Удалить заказ</button>
+											</div>
+										</div><!-- page-user-cab-ist-order-title -->
+										<ul>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+										</ul>
+										<div class="page-user-cab-ist-order-status clearfix">
+											<div class="page-user-cab-order-status">
+												<p>Исполняется</p>
+											</div>
+											<div class="page-user-cab-order-total">
+												<p>Итого <span>50 000</span> ₽</p>
+											</div>
+										</div>
+									</div><!-- page-user-cab-ist-order -->
+									<div class="filterDiv user-cab-finish page-user-cab-ist-order">
+										<div class="page-user-cab-ist-order-title clearfix">
+											<div class="page-user-order-title-numb">
+												<p>Заказ <span>В-05154621</span></p>
+											</div>
+											<div class="page-user-order-title-date">
+												<p>от <span>2018-03-02 15:15:15</span></p>
+											</div>
+											<div class="page-user-order-title-del">
+												<button>Удалить заказ</button>
+											</div>
+										</div><!-- page-user-cab-ist-order-title -->
+										<ul>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+											<li class="page-user-cab-izb-item clearfix">
+												<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+												<div class="page-card-series-item-wrap">
+													<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+													<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+												</div>
+												<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+											</li>
+										</ul>
+										<div class="page-user-cab-ist-order-status clearfix">
+											<div class="page-user-cab-order-status">
+												<p>Завершено</p>
+											</div>
+											<div class="page-user-cab-order-total">
+												<p>Итого <span>50 000</span> ₽</p>
+											</div>
+										</div>
+									</div><!-- page-user-cab-ist-order -->
+								</div>
+							</div><!-- page-user-cab-self -->
 						</div>
-						<div class="page-order-form-content">
-							<label for="page-user-nik">Никнейм </label>
-							<input type="text" id="page-user-nik" name="page-user-nik" placeholder="">
-							<i class="fal fa-pen"></i>
-						</div>
-						<div class="page-order-btn-wrap">
-							<button type="button" class="page-order-btn page-user-btn">Сохранить</button>
-						</div>
-						<p>Дата регистрации</p>
-						<p>12.12.2017</p>
-						
-					</div><!-- page-user-cab-self -->
-					<div class="page-user-cab-right">
-						<div class="page-user-cab-right-item">
-							<a>
+					</div>
+				</div>
+
+				<div class="page-user-cab-main page-user-cab-main-desctop clearfix">
+					<div class="user-tabs">
+						<ul class="page-user-cab-right user-tabs__caption">
+							<li class="page-user-cab-right-item active">
 								<div class="page-user-cab-right-wrap">
 									<i class="fal fa-address-card"></i>
 								</div>
 								<p>Личные данные</p>
-							</a>
-							
-						</div>
-						<div class="page-user-cab-right-item">
-							<a href="user-cab-izb.html">
+							</li>
+							<li class="page-user-cab-right-item">
 								<div class="page-user-cab-right-wrap">
 									<i class="fal fa-heart"></i>
 								</div>
 								<p>Избранное</p>
-							</a>
-							
-						</div>
-						<div class="page-user-cab-right-item">
-							<a href="user-cab-ist.html">
+							</li>
+							<li class="page-user-cab-right-item">
 								<div class="page-user-cab-right-wrap">
 									<i class="fal fa-clipboard"></i>
 								</div>
 								<p>История заказов</p>
-							</a>
+							</li>
+						</ul> 
+						<div class="page-user-cab-self user-tabs__content active">
+							<div class="page-order-form-content">
+								<label for="page-user-tel">Телефон </label>
+								<input class="phone-mask" type="text" id="page-user-tel" name="page-user-tel" placeholder="7 900 000 00 00">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-email">E-mail <sup class="required-field">*</sup> </label>
+								<input type="text" id="page-user-email" name="page-user-email" placeholder="innokentiy@mymail.com">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-pass">Пароль <sup class="required-field">*</sup> </label>
+								<input type="text" id="page-user-pass" name="page-user-pass" placeholder="●●●●●●●●●">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-date">Дата рождения </label>
+								<input type="text" id="page-user-date" name="page-user-date" placeholder="">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-name">Имя <sup class="required-field">*</sup> </label>
+								<input type="text" id="page-user-name" name="page-user-name" placeholder="Иннокентий">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-fio">Фамилия <sup class="required-field">*</sup> </label>
+								<input type="text" id="page-user-fio" name="page-user-fio" placeholder="Петрович">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-form-content">
+								<label for="page-user-nik">Никнейм </label>
+								<input type="text" id="page-user-nik" name="page-user-nik" placeholder="">
+								<i class="fal fa-pen"></i>
+							</div>
+							<div class="page-order-btn-wrap">
+								<button type="button" class="page-order-btn page-user-btn">Сохранить</button>
+							</div>
+							<p>Дата регистрации</p>
+							<p>12.12.2017</p>
+						</div><!-- page-user-cab-self -->
+
+						<div class="page-user-cab-self page-user-cab-self-izb user-tabs__content">
+							<p>В избранном <span>5</span> товаров на сумму <span>50 000</span> ₽</p>
+							<ul class="page-user-cab-izb-items">
+								<li class="page-user-cab-izb-item clearfix">
+									<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+									<div class="page-card-series-item-wrap">
+										<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+										<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+									</div>
+									<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+								</li>
+								<li class="page-user-cab-izb-item clearfix">
+									<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+									<div class="page-card-series-item-wrap">
+										<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+										<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+									</div>
+									<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+								</li>
+								<li class="page-user-cab-izb-item clearfix">
+									<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+									<div class="page-card-series-item-wrap">
+										<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+										<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+									</div>
+									<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+								</li>
+								<li class="page-user-cab-izb-item clearfix">
+									<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+									<div class="page-card-series-item-wrap">
+										<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+										<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+									</div>
+									<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+								</li>
+							</ul>
+							<div class="page-order-btn-wrap">
+								<button type="button" class="page-order-btn page-user-btn">Купить все</button>
+							</div>
 							
-						</div>
-					</div><!-- /.page-user-cab-right -->
+						</div><!-- page-user-cab-self -->
+
+						<div class="page-user-cab-self page-user-cab-self-izb user-tabs__content">
+							<!-- Control buttons -->
+							<div id="user-cab-tab-list">
+								<button class="user-cab-tab-item active" onclick="filterSelection('all')">Все заказы (<span>2</span>)</button>
+								<button class="user-cab-tab-item" onclick="filterSelection('user-cab-in-work')"> В исполнении (<span>1</span>)</button>
+								<button class="user-cab-tab-item" onclick="filterSelection('user-cab-finish')"> Завершённые (<span>1</span>)</button>
+							</div>
+							<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+							<div class="user-cab-box">
+								<div class="filterDiv user-cab-in-work page-user-cab-ist-order">
+									<div class="page-user-cab-ist-order-title clearfix">
+										<div class="page-user-order-title-numb">
+											<p>Заказ <span>В-05154621</span></p>
+										</div>
+										<div class="page-user-order-title-date">
+											<p>от <span>2018-03-02 15:15:15</span></p>
+										</div>
+										<div class="page-user-order-title-del">
+											<button>Удалить заказ</button>
+										</div>
+									</div><!-- page-user-cab-ist-order-title -->
+									<ul>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+									</ul>
+									<div class="page-user-cab-ist-order-status clearfix">
+										<div class="page-user-cab-order-status">
+											<p>Исполняется</p>
+										</div>
+										<div class="page-user-cab-order-total">
+											<p>Итого <span>50 000</span> ₽</p>
+										</div>
+									</div>
+								</div><!-- page-user-cab-ist-order -->
+								<div class="filterDiv user-cab-finish page-user-cab-ist-order">
+									<div class="page-user-cab-ist-order-title clearfix">
+										<div class="page-user-order-title-numb">
+											<p>Заказ <span>В-05154621</span></p>
+										</div>
+										<div class="page-user-order-title-date">
+											<p>от <span>2018-03-02 15:15:15</span></p>
+										</div>
+										<div class="page-user-order-title-del">
+											<button>Удалить заказ</button>
+										</div>
+									</div><!-- page-user-cab-ist-order-title -->
+									<ul>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+										<li class="page-user-cab-izb-item clearfix">
+											<div class="izb-img-wrap"><img src="img/item1.png" alt="Смеситель"></div>
+											<div class="page-card-series-item-wrap">
+												<div class="page-card-series-item-name page-user-izb-name"><span>Смеситель</span></div>
+												<div class="page-card-series-item-mark"><span>Zorg ZR 314YF-11 BR</span></div>
+											</div>
+											<div class="page-card-series-item-price page-user-izb-price"><span>10 000 ₽</span></div>
+										</li>
+									</ul>
+									<div class="page-user-cab-ist-order-status clearfix">
+										<div class="page-user-cab-order-status">
+											<p>Завершено</p>
+										</div>
+										<div class="page-user-cab-order-total">
+											<p>Итого <span>50 000</span> ₽</p>
+										</div>
+									</div>
+								</div><!-- page-user-cab-ist-order -->
+							</div>
+						</div><!-- page-user-cab-self -->
+
+
+
+					</div>
 				</div>
-				
-
-
-				
 
 				<div class="page-discount-bottom">
 					<div class="page-discount-bottom-img"><img src="img/icons/ask.png" alt="Вопрос"></div>
 					<a class="popup-link-3" href="#">Что можно улучшить на этой странице?</a>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	
@@ -301,7 +671,6 @@
 						<span>г. Москва, ул. Кирова 105а</span>
 					</a>
 				</div>
-
 				<ul class="footer-social">
 					<li class="footer-social__item">
 						<a class="footer-social__link" href="">
@@ -330,7 +699,6 @@
 					</li>
 				</ul>
 			</div>
-			
 			<div class="footer-list-wrapp">
 				<div class="footer-item col-lg-4">
 					<ul class="footer-list">

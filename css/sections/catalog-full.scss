@@ -56,6 +56,10 @@
 }
 .accordeon-title {
   position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.page-catalog-full .accordeon-title {
   color: $lilac;
   text-decoration: underline;
   padding-left: 20px;
@@ -63,7 +67,7 @@
   margin: 0;
 }
 
-.accordeon-title:after {
+.page-catalog-full .accordeon-title:after {
   position: absolute;
   left: 0;
   top: 50%;
@@ -78,11 +82,13 @@
   text-align: center;
 }
 
-.accordeon-title.is-opened:after {
+.page-catalog-full .accordeon-title.is-opened:after {
   content: '-';
 }
 
 .accordeon-content {
   display: none;
+} 
+.page-catalog-full .accordeon-content {
   padding: 10px;
 } 

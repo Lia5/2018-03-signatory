@@ -13,6 +13,9 @@
 .head-first-login span {
 	border-bottom: 1px dashed $white;
 }
+.head-first-login a {
+	color: $white;
+}
 
 .head-first-login {
 	// float: right;
@@ -96,6 +99,9 @@
 	cursor: pointer;
 	border: 1px solid $button;
 	text-align: center;
+}
+.order-cart a {
+	color: $button;	
 }
 .head-search {
 	margin-top: 4px;
@@ -289,8 +295,11 @@
 .signal {
 	color: $button;
 	font-size: 14px;
-	    font-weight: bold;
+	font-weight: bold;
 	padding: 12px;
+}
+.signal a {
+	color: $button;
 }
 .signal-box-btn {
 	display: inline-block;

@@ -9782,6 +9782,9 @@ button.close {
 .head-first-login span {
   border-bottom: 1px dashed #fff; }
 
+.head-first-login a {
+  color: #fff; }
+
 .head-first-login {
   display: inline-block;
   vertical-align: middle; }
@@ -9855,6 +9858,9 @@ button.close {
   cursor: pointer;
   border: 1px solid #51627d;
   text-align: center; }
+
+.order-cart a {
+  color: #51627d; }
 
 .head-search {
   margin-top: 4px; }
@@ -10042,6 +10048,9 @@ button.close {
   font-size: 14px;
   font-weight: bold;
   padding: 12px; }
+
+.signal a {
+  color: #51627d; }
 
 .signal-box-btn {
   display: inline-block;
@@ -11757,13 +11766,17 @@ svg:not(:root) {
 
 .accordeon-title {
   position: relative;
+  cursor: pointer;
+  margin: 0; }
+
+.page-catalog-full .accordeon-title {
   color: #5674a5;
   text-decoration: underline;
   padding-left: 20px;
   cursor: pointer;
   margin: 0; }
 
-.accordeon-title:after {
+.page-catalog-full .accordeon-title:after {
   position: absolute;
   left: 0;
   top: 50%;
@@ -11779,11 +11792,13 @@ svg:not(:root) {
   line-height: 12px;
   text-align: center; }
 
-.accordeon-title.is-opened:after {
+.page-catalog-full .accordeon-title.is-opened:after {
   content: '-'; }
 
 .accordeon-content {
-  display: none;
+  display: none; }
+
+.page-catalog-full .accordeon-content {
   padding: 10px; }
 
 .page-cart-item {
@@ -12560,7 +12575,8 @@ svg:not(:root) {
 
 .page-user-cab-right-item {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  cursor: pointer; }
 
 .page-user-cab-right-item:first-child {
   padding-top: 40px; }
@@ -12570,6 +12586,25 @@ svg:not(:root) {
 
 .page-user-cab-right-item p {
   color: #fff; }
+
+/*acc*/
+.page-user-cab .accordeon-title {
+  background-color: #9aafd1;
+  text-align: center; }
+
+.accordeon-content-visible {
+  display: block; }
+
+.user-tabs__content {
+  display: none;
+  /* по умолчанию прячем все блоки */ }
+
+.user-tabs__content.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */ }
+
+.page-user-cab-main-planshet {
+  display: none; }
 
 .page-user-cab-izb-items {
   margin: 43px 0 20px; }
@@ -13636,6 +13671,10 @@ p.modal-7-form-intro {
     width: 29%; } }
 
 @media screen and (max-width: 1200px) {
+  .page-user-cab-main-planshet {
+    display: block; }
+  .page-user-cab-main-desctop {
+    display: none; }
   .page-user-cab-self {
     width: 100%; } }
 
