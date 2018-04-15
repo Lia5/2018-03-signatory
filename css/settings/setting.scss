@@ -167,20 +167,25 @@ h2.resp-accordion {
 }
 
 .resp-arrow {
-  width: 0;
-  height: 0;
-  float: right;
-  margin-top: 3px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 12px solid #c1c1c1;
+	margin-top: -3px;
+	font-size: 21px;
+	float: left;
+	padding-right: 10px;
+  // width: 0;
+  // height: 0;
+  // float: right;
+  // margin-top: 3px;
+  // border-left: 6px solid transparent;
+  // border-right: 6px solid transparent;
+  // border-top: 12px solid #c1c1c1;
 }
 
 h2.resp-tab-active span.resp-arrow {
-  border: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 12px solid #9B9797;
+	transform: translate(-50%, 0) rotate(180deg);
+  // border: none;
+  // border-left: 6px solid transparent;
+  // border-right: 6px solid transparent;
+  // border-bottom: 12px solid #9B9797;
 }
 
 /*-----------Accordion styles-----------*/
@@ -195,7 +200,7 @@ h2.resp-tab-active span.resp-arrow {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px) {
 	ul.resp-tabs-list {
 			display: none;
 	}

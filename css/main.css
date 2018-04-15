@@ -565,19 +565,15 @@ h2.resp-accordion {
   z-index: 1; }
 
 .resp-arrow {
-  width: 0;
-  height: 0;
-  float: right;
-  margin-top: 3px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 12px solid #c1c1c1; }
+  margin-top: -3px;
+  font-size: 21px;
+  float: left;
+  padding-right: 10px; }
 
 h2.resp-tab-active span.resp-arrow {
-  border: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 12px solid #9B9797; }
+  -webkit-transform: translate(-50%, 0) rotate(180deg);
+  -ms-transform: translate(-50%, 0) rotate(180deg);
+  transform: translate(-50%, 0) rotate(180deg); }
 
 /*-----------Accordion styles-----------*/
 .resp-easy-accordion h2.resp-accordion {
@@ -590,7 +586,7 @@ h2.resp-tab-active span.resp-arrow {
 .resp-tab-content-active {
   display: block; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px) {
   ul.resp-tabs-list {
     display: none; }
   h2.resp-accordion {
@@ -11153,9 +11149,12 @@ input[type="radio"],
 input[type="checkbox"] {
   display: none; }
 
-@media only screen and (max-width: 760px) {
-  body {
-    padding: 0; }
+@media only screen and (max-width: 1199px) {
+  .primary {
+    max-width: none;
+    text-align: left; }
+  .card-prod-tab-save {
+    max-width: none; }
   #table {
     display: block;
     margin: 44px 0 0 0; }
@@ -14076,6 +14075,79 @@ p.modal-7-form-intro {
 
 @media screen and (max-width: 1199px) {
   .page-cart-controls {
-    width: 29%; } }
+    width: 29%; }
+  .page-card-item-main {
+    width: 100%; }
+  .page-card-main-title {
+    width: 70%;
+    display: inline-block; }
+  .page-card-main-btn {
+    float: right; }
+  /*videoslider*/
+  .page-card-main-slider {
+    width: 69%;
+    display: inline-block; }
+  .page-card-main-videoslider {
+    width: 12%;
+    display: inline-block;
+    float: right;
+    margin-right: 11%; }
+  .page-card-main-videoslider .slider-company_arrow-left {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0) rotate(-90deg);
+    -ms-transform: translate(-50%, 0) rotate(-90deg);
+    transform: translate(-50%, 0) rotate(-90deg);
+    bottom: -40px;
+    top: auto; }
+  .page-card-main-videoslider .slider-company_arrow-right {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0) rotate(-90deg);
+    -ms-transform: translate(-50%, 0) rotate(-90deg);
+    transform: translate(-50%, 0) rotate(-90deg);
+    top: -40px; }
+  /**/
+  .page-card-items-descr-txt-wrap {
+    display: inline-block;
+    width: 51%; }
+  .page-card-items-conditions {
+    display: inline-block; }
+  .page-card-item-descr {
+    padding-left: 6%;
+    width: 70%;
+    font-size: 12px; }
+  .page-card-controls {
+    float: left;
+    width: 30%; }
+  /*resp-acc*/
+  .card-prod-box {
+    padding: 0; }
+  .card-prod-tabs h2.resp-accordion {
+    font-size: 14px;
+    padding: 12px 40px;
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8; }
+  .card-prod-box-wrapp {
+    padding: 28px;
+    width: 100%; }
+  .card-prod-box-wrapp2 {
+    padding: 28px;
+    width: 100%; }
+  .page-card-watch-item {
+    padding: 30px 24px; }
+  .page-card-prod .card-prod-box-wrapp2-checkbox {
+    float: left;
+    margin-left: -27px;
+    margin-top: 13px; }
+  .card-prod-box-wrapp2 .page-user-cab-izb-item {
+    padding-left: 30px; }
+  .card-prod-box-wrapp2 .page-user-izb-price {
+    width: 40%; }
+  .card-prod-box-wrapp2-img-wrap {
+    display: none; }
+  .page-card-prod .page-card-prod-series-item-wrap {
+    width: 54%; }
+  .page-card-series-item-img {
+    width: 133px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */

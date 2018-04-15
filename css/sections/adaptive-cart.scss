@@ -2,6 +2,103 @@
   .page-cart-controls {
     width: 29%;
   }
+  .page-card-item-main {
+    width: 100%;
+  }
+  .page-card-main-title {
+    width: 70%;
+    display: inline-block;
+  }
+  .page-card-main-btn {
+    float: right;
+  }
+    /*videoslider*/  
+  .page-card-main-slider {
+    width: 69%;
+    display: inline-block;
+  }
+  .page-card-main-videoslider {
+    width: 12%;
+    display: inline-block;
+    float: right;
+    margin-right: 11%;
+  }
+
+    .page-card-main-videoslider .slider-company_arrow-left {
+      left: 50%;
+      transform: translate(-50%, 0) rotate(-90deg);
+      bottom: -40px;
+      top: auto;
+    }
+    .page-card-main-videoslider .slider-company_arrow-right {
+      left: 50%;
+      transform: translate(-50%, 0) rotate(-90deg);
+      top: -40px;
+    }
+    /**/
+    .page-card-items-descr-txt-wrap {
+      display: inline-block;
+      width: 51%;
+    }
+    .page-card-items-conditions {
+      display: inline-block;
+    }
+    .page-card-item-descr {
+      padding-left: 6%;
+      width: 70%;
+      font-size: 12px;
+    }
+    .page-card-controls {
+      float: left;
+      width: 30%;
+    }
+    /*resp-acc*/
+    .card-prod-box {
+      padding: 0;
+    }
+    .card-prod-tabs h2.resp-accordion {
+      font-size: 14px;
+      padding: 12px 40px;
+      margin: 0;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .card-prod-box-wrapp {
+      padding: 28px;
+      width: 100%;
+    }
+
+    .card-prod-box-wrapp2 {
+      padding: 28px;
+      width: 100%;
+    }
+    .page-card-watch-item {
+      padding: 30px 24px;
+    }
+    .page-card-prod .card-prod-box-wrapp2-checkbox {
+      float: left;
+      margin-left: -27px;
+      margin-top: 13px;
+    }
+    .card-prod-box-wrapp2 .page-user-cab-izb-item {
+      padding-left: 30px;
+    }
+    .card-prod-box-wrapp2 .page-user-izb-price {
+      width: 40%;
+    }
+    .card-prod-box-wrapp2-img-wrap {
+      display: none;
+    }
+    .page-card-prod .page-card-prod-series-item-wrap {
+      width: 54%;
+    }
+
+
+
+
+    .page-card-series-item-img {
+      width: 133px;
+      margin: 0 auto;
+    }
 }
 @media screen and (max-width: 767px) {
 

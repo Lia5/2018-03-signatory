@@ -505,7 +505,6 @@ background-color: $red;
 }
  .primary {
    max-width: 188px;
-//   text-align: left;
  }
  .card-prod-tab-save {
   max-width: 96px;;
@@ -516,11 +515,14 @@ input[type="checkbox"]{
 }
 
 
-@media only screen and (max-width: 760px)  {
-
-  body {
-    padding: 0;
-  }
+@media only screen and (max-width: 1199px)  {
+  .primary {
+    max-width: none;
+    text-align: left;
+   }
+   .card-prod-tab-save {
+    max-width: none;
+   }
 
   #table {
     display: block;
