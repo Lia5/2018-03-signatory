@@ -12478,7 +12478,7 @@ svg:not(:root) {
   left: 30px; }
 
 .author-txt p {
-  padding-top: 5x;
+  padding-top: 5px;
   padding-bottom: 5px; }
 
 .page-user-cab-main {
@@ -12624,7 +12624,7 @@ svg:not(:root) {
 .page-card-series-item-wrap {
   display: inline-block;
   vertical-align: middle;
-  width: 57%; }
+  width: 56%; }
 
 .page-card-series-item-wrap .page-card-series-item-name,
 .page-card-series-item-wrap .page-card-series-item-mark {
@@ -12681,7 +12681,8 @@ svg:not(:root) {
   margin-bottom: 63px; }
 
 .page-user-cab-ist-order-title {
-  background-color: #e8e8e8; }
+  background-color: #e8e8e8;
+  padding: 6px 10px; }
 
 .page-user-order-title-numb {
   float: left;
@@ -13591,7 +13592,7 @@ p.modal-7-form-intro {
 .disable-desktop {
   display: none; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 11990px) {
   .container {
     width: 100%; }
   .disable-desktop {
@@ -13612,7 +13613,7 @@ p.modal-7-form-intro {
     height: 25px;
     padding: 3px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 0; }
   .page-discount-title {
@@ -13623,7 +13624,7 @@ p.modal-7-form-intro {
   .page-catalog-title {
     padding: 6px 20px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .page-video-item {
     width: 49%;
     float: left;
@@ -13652,7 +13653,7 @@ p.modal-7-form-intro {
   .page-video-item:first-child {
     padding-top: 20px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-video-item:nth-child(2n-1),
   .page-video-item {
     width: 100%; }
@@ -13666,16 +13667,88 @@ p.modal-7-form-intro {
   .page-video-text {
     font-size: 12px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .page-cart-controls {
     width: 29%; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .page-user-cab-main-planshet {
     display: block; }
   .page-user-cab-main-desctop {
     display: none; }
   .page-user-cab-self {
-    width: 100%; } }
+    width: 100%; }
+  .page-user-cab .author-txt {
+    width: 58%; }
+  .page-user-cab-self {
+    padding: 40px 115px; }
+  /*izb*/
+  .page-user-cab-self-izb {
+    padding: 35px; }
+  .page-user-cab .page-card-series-item-wrap {
+    width: 50%; }
+  .page-user-cab .page-order-btn-wrap {
+    text-align: center;
+    margin-bottom: 30px; }
+  .page-user-cab .page-order-btn-wrap .page-user-btn {
+    width: 238px; }
+  /*ist*/
+  .page-user-cab .page-user-cab-ist-order-title {
+    position: relative; }
+  .page-user-cab .page-user-order-title-del {
+    float: none;
+    position: absolute;
+    top: 6px;
+    right: 10px; }
+  .page-user-cab .page-user-order-title-numb,
+  .page-user-cab .page-user-order-title-date {
+    float: none; } }
+
+@media screen and (max-width: 767px) {
+  .page-user-cab .main-nav-box-pic-wrapp {
+    height: 200px; }
+  .page-user-cab .author-txt {
+    bottom: 13px; }
+  .page-user-cab .author-txt-name {
+    position: absolute;
+    top: -119%;
+    left: 75%; }
+  .page-user-cab .main-nav-box {
+    float: none;
+    width: 100%;
+    padding: 0 15px 14px; }
+  .page-user-cab .main {
+    float: none;
+    width: 100%;
+    padding-left: 0; }
+  .page-user-cab-self {
+    padding: 20px 40px; }
+  .page-user-cab .page-card-series-item-wrap {
+    width: 67%; }
+  /*izb*/
+  .page-user-izb-price {
+    width: 100%;
+    text-align: left;
+    padding-left: 74px; }
+  .page-user-cab-self-izb > p {
+    width: 71%; }
+  /*ist*/
+  .page-user-cab .page-user-cab-ist-order-title {
+    font-size: 12px; }
+  .izb-img-wrap {
+    display: none; }
+  .page-user-izb-price {
+    font-size: 16px;
+    padding-left: 0;
+    text-align: right;
+    width: 26%; }
+  .page-user-cab-izb-item {
+    padding: 18px 25px; }
+  .page-user-cab-self {
+    padding: 20px 15px; }
+  .page-user-cab .page-user-cab-ist-order-status {
+    padding: 15px 25px; }
+  .page-user-cab .page-user-cab-order-total {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
