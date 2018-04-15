@@ -109,3 +109,108 @@ select:active, select:hover, select:focus {
   outline: 0;
   outline-offset: 0;
 }
+
+/*resp-tabs*/
+
+ul.resp-tabs-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.resp-tabs-list li {
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+}
+
+.resp-tabs-container {
+  clear: left;
+}
+
+h2.resp-accordion {
+  cursor: pointer;
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+}
+
+.resp-tab-active {
+
+}
+
+.resp-content-active, .resp-accordion-active {
+  display: block;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  cursor: pointer;
+  float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+  float: left;
+  clear: none;
+}
+
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1;
+}
+
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+.resp-easy-accordion  h2.resp-accordion {
+      display: block;
+}
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+.resp-tab-content-active {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+	ul.resp-tabs-list {
+			display: none;
+	}
+	h2.resp-accordion {
+			display: block;
+	}
+	.resp-vtabs .resp-tabs-container {
+			border: none;
+			float: none;
+			width: 100%;
+			min-height: initial;
+			clear: none;
+	}
+	.resp-accordion-closed {
+			display:none !important;
+	}
+}
+/*end resp-tabs*/

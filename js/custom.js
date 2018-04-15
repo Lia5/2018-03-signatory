@@ -431,3 +431,7 @@ $(document).ready(function() {
    
   });
   })(jQuery);
+
+  /*responsiveTabs*/
+
+  $('.tabs-to-acc').easyResponsiveTabs();

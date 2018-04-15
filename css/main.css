@@ -523,6 +523,88 @@ select:active, select:hover, select:focus {
   outline: 0;
   outline-offset: 0; }
 
+/*resp-tabs*/
+ul.resp-tabs-list {
+  margin: 0px;
+  padding: 0px; }
+
+.resp-tabs-list li {
+  display: inline-block;
+  cursor: pointer;
+  float: left; }
+
+.resp-tabs-container {
+  clear: left; }
+
+h2.resp-accordion {
+  cursor: pointer;
+  display: none; }
+
+.resp-tab-content {
+  display: none; }
+
+.resp-content-active, .resp-accordion-active {
+  display: block; }
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 30%; }
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  cursor: pointer;
+  float: none; }
+
+.resp-vtabs .resp-tabs-container {
+  float: left;
+  clear: none; }
+
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1; }
+
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1; }
+
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797; }
+
+/*-----------Accordion styles-----------*/
+.resp-easy-accordion h2.resp-accordion {
+  display: block; }
+
+.resp-jfit {
+  width: 100%;
+  margin: 0px; }
+
+.resp-tab-content-active {
+  display: block; }
+
+@media only screen and (max-width: 768px) {
+  ul.resp-tabs-list {
+    display: none; }
+  h2.resp-accordion {
+    display: block; }
+  .resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: initial;
+    clear: none; }
+  .resp-accordion-closed {
+    display: none !important; } }
+
+/*end resp-tabs*/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -10905,9 +10987,6 @@ button.close {
   border-bottom: 1px dashed #86a2d0; }
 
 /*tabs*/
-.card-prod-tabs {
-  margin-bottom: 18px; }
-
 .card-prod-tab-item:first-child {
   padding-left: 38px; }
 
@@ -10916,19 +10995,21 @@ button.close {
   padding: 13px 28px;
   color: #fff;
   background-color: #4c4c4c;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 4px; }
 
 .card-prod-tab-item:hover {
   opacity: 0.7; }
 
-.card-prod-tab-item.active {
+.card-prod-tab-item.resp-tab-active {
   background-color: #fff;
   color: #dc383b; }
 
-.card-prod-tab-item.active span {
+.card-prod-tab-item.resp-tab-active span {
   border-bottom: 1px dashed #dc383b; }
 
 .card-prod-box {
+  margin-bottom: 18px;
   padding: 32px 38px 63px;
   background-color: #fff; }
 
@@ -11660,6 +11741,9 @@ svg:not(:root) {
 .page-brands-about {
   font-size: 14px;
   color: #4c4c4c; }
+
+.page-brands-serch {
+  display: none; }
 
 .page-brands-navigation {
   font-size: 18px;
@@ -13592,7 +13676,7 @@ p.modal-7-form-intro {
 .disable-desktop {
   display: none; }
 
-@media screen and (max-width: 11990px) {
+@media screen and (max-width: 1199px) {
   .container {
     width: 100%; }
   .disable-desktop {
@@ -13624,6 +13708,21 @@ p.modal-7-form-intro {
   .page-catalog-title {
     padding: 6px 20px; } }
 
+/*
+@media screen and (max-width: 1199px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+
+
+*/
 @media screen and (max-width: 1199px) {
   .page-video-item {
     width: 49%;
@@ -13666,10 +13765,6 @@ p.modal-7-form-intro {
     padding-right: 0; }
   .page-video-text {
     font-size: 12px; } }
-
-@media screen and (max-width: 1199px) {
-  .page-cart-controls {
-    width: 29%; } }
 
 @media screen and (max-width: 1199px) {
   .page-user-cab-main-planshet {
@@ -13750,5 +13845,53 @@ p.modal-7-form-intro {
     padding: 15px 25px; }
   .page-user-cab .page-user-cab-order-total {
     font-size: 14px; } }
+
+@media screen and (max-width: 1199px) {
+  .page-brands-navigation {
+    display: none; }
+  .page-brands-serch {
+    display: block;
+    width: 49%;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #4c4c4c; }
+  .page-brands-serch .head-search-form {
+    padding: 0; }
+  .page-brands-serch .head-search-form input {
+    padding: 5px 20px; }
+  .page-brands-serch svg {
+    top: 7px; }
+  .page-brands-about {
+    font-size: 12px;
+    width: 49%;
+    margin: 0 auto 20px; }
+  .page-brands-item {
+    padding: 16px 22px 9px; }
+  .page-brands-item-img {
+    height: 25px;
+    width: 88px;
+    margin: 0 auto; }
+  .page-brands-item-descr {
+    padding-top: 2px;
+    font-size: 13px; }
+  .page-brands-item-name {
+    display: block; } }
+
+@media screen and (max-width: 767px) {
+  .page-brands .page-discount-info {
+    padding: 16px; }
+  .page-brands-about {
+    width: 100%;
+    margin: 0 0 20px; }
+  .page-brands-serch {
+    width: 100%; }
+  .page-card-watch-item-wrap:nth-child(2n) {
+    margin-right: 0; }
+  .page-card-watch-item-wrap {
+    width: 46%; } }
+
+@media screen and (max-width: 1199px) {
+  .page-cart-controls {
+    width: 29%; } }
 
 /*# sourceMappingURL=main.css.map */

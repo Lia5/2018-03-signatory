@@ -1,0 +1,65 @@
+@media screen and (max-width: 1199px) {
+  .page-brands-navigation {
+    display: none;
+  }
+  .page-brands-serch {
+    display: block;
+    width: 49%;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #4c4c4c;
+  }
+  .page-brands-serch .head-search-form {
+    padding: 0;
+  }
+  .page-brands-serch .head-search-form input {
+    padding: 5px 20px;
+  }
+  .page-brands-serch svg {
+    top: 7px;
+  }
+  .page-brands-about {
+    font-size: 12px;
+    width: 49%;
+    margin: 0 auto 20px;
+  }
+  .page-brands-item {
+    padding: 16px 22px 9px;
+  }
+  .page-brands-item-img {
+    height: 25px;
+    width: 88px;
+    margin: 0 auto;
+  }
+  .page-brands-item-descr {
+    padding-top: 2px;
+    font-size: 13px;
+  }
+  .page-brands-item-name {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .page-brands .page-discount-info {
+    padding: 16px;
+  }
+  .page-brands-about {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .page-brands-serch {
+    width: 100%;
+  }
+  .page-card-watch-item-wrap:nth-child(2n) {
+    margin-right: 0;
+  }
+  .page-card-watch-item-wrap {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+}
