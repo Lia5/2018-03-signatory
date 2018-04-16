@@ -43,6 +43,40 @@
   }
   .head-two {
     position: relative;
+    padding: 8px 0;
+  }
+  .menu-gamburger-mobile {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px 5px;
+  }
+  .menu-gamburger-mobile span {
+    left: 20px;
+    right: auto;
+    background-color: $lilac;
+  }
+  .menu-gamburger-mobile span:after,
+   .menu-gamburger-mobile span:before {
+     background-color: $lilac;
+   }
+   .head-two-login {
+    max-width: 169px;
+   }
+  .head-two-login img {
+    width: 100%;
+  }
+  .order-cart {
+    border: none;
+    padding: 0 4px;
+    margin-right: 30px;
+  }
+  .page-menu {
+    display: none;
+  }
+  .page-menu-phone {
+    display: none;
   }
 
 }

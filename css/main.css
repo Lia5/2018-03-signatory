@@ -13865,6 +13865,9 @@ p.modal-7-form-intro {
 .disable-desktop {
   display: none; }
 
+.visible-mobile {
+  display: none; }
+
 @media screen and (max-width: 1199px) {
   .container {
     width: 100%; }
@@ -13889,6 +13892,8 @@ p.modal-7-form-intro {
 @media screen and (max-width: 767px) {
   .disable-mobile {
     display: none; }
+  .visible-mobile {
+    display: inline-block; }
   .container {
     padding: 0; }
   .page-discount-title {
@@ -13944,7 +13949,33 @@ p.modal-7-form-intro {
     margin-left: 0;
     margin-right: 0; }
   .head-two {
-    position: relative; } }
+    position: relative;
+    padding: 8px 0; }
+  .menu-gamburger-mobile {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px 5px; }
+  .menu-gamburger-mobile span {
+    left: 20px;
+    right: auto;
+    background-color: #5674a5; }
+  .menu-gamburger-mobile span:after,
+  .menu-gamburger-mobile span:before {
+    background-color: #5674a5; }
+  .head-two-login {
+    max-width: 169px; }
+  .head-two-login img {
+    width: 100%; }
+  .order-cart {
+    border: none;
+    padding: 0 4px;
+    margin-right: 30px; }
+  .page-menu {
+    display: none; }
+  .page-menu-phone {
+    display: none; } }
 
 @media screen and (max-width: 1199px) {
   .footer-sticky-menu {
