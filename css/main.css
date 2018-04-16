@@ -11149,6 +11149,12 @@ input[type="radio"],
 input[type="checkbox"] {
   display: none; }
 
+.cp-right-open {
+  color: #5674a5;
+  border-bottom: 1px dashed #5674a5;
+  text-align: left;
+  margin: -5%; }
+
 @media only screen and (max-width: 1199px) {
   .primary {
     max-width: none;
@@ -11174,10 +11180,10 @@ input[type="checkbox"] {
     display: none; }
   .cell {
     display: block;
+    padding: 15px 22px;
     border: none;
     position: relative;
-    height: 45px;
-    line-height: 45px;
+    height: 50px;
     text-align: left; }
   .primary:after {
     content: "";
@@ -11208,22 +11214,19 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked ~ .cell {
     display: block;
     border-bottom: 1px solid #eee; }
-  input[type="radio"]:checked ~ .cell:nth-of-type(n+2),
-  input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2) {
-    background: #e0e0e0; }
   input[type="radio"]:checked ~ .cell:nth-of-type(n+2):before,
   input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2):before {
     content: attr(data-label);
     display: inline-block;
-    width: 60px;
-    background: #999;
+    width: 50%;
     border-radius: 10px;
-    height: 20px;
     margin-right: 10px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    color: white; }
+    font-size: 14px;
+    text-align: left; }
+  .cp-right {
+    text-align: right;
+    display: inline-block;
+    width: 48%; }
   input[type="radio"]:checked ~ .primary,
   input[type="checkbox"]:checked ~ .primary {
     border-bottom: 2px solid #999; }
@@ -11236,6 +11239,9 @@ input[type="checkbox"] {
     border-left: 10px solid transparent;
     border-top: 10px solid #ccc;
     z-index: 2; } }
+
+.even-row-desctop {
+  background-color: #f4f4f4; }
 
 /*page-card-series slider*/
 .page-card-series-wrap {
@@ -14146,6 +14152,12 @@ p.modal-7-form-intro {
     display: none; }
   .page-card-prod .page-card-prod-series-item-wrap {
     width: 54%; }
+  .card-prod-box-left {
+    width: 18%; }
+  .card-prod-box-main {
+    width: 82%; }
+  .even-row-desctop {
+    background-color: #fff; }
   .page-card-series-item-img {
     width: 133px;
     margin: 0 auto; } }

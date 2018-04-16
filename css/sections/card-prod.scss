@@ -513,7 +513,12 @@ input[type="radio"],
 input[type="checkbox"]{
   display: none;
 }
-
+.cp-right-open {
+  color: $lilac;
+  border-bottom: 1px dashed $lilac;
+  text-align: left;
+  margin: -5%;
+}
 
 @media only screen and (max-width: 1199px)  {
   .primary {
@@ -552,11 +557,11 @@ input[type="checkbox"]{
   
   .cell { 
     display: block;
-
+    padding: 15px 22px;
     border: none;
     position: relative;
-    height: 45px;
-    line-height: 45px;
+    height: 50px;
+    // line-height: 45px;
     text-align: left;
   }
 
@@ -604,7 +609,7 @@ input[type="checkbox"]{
 
   input[type="radio"]:checked ~ .cell:nth-of-type(n+2),
   input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2) {
-    background: #e0e0e0;
+    // background: #e0e0e0;
   }
 
   input[type="radio"]:checked ~ .cell:nth-of-type(n+2):before,
@@ -612,18 +617,19 @@ input[type="checkbox"]{
     content: attr(data-label);
 
     display: inline-block;
-    width: 60px;
-    background: #999;
+    width: 50%;
     border-radius: 10px;
-    height: 20px;
+    // height: 20px;
     margin-right: 10px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    color: white;
+    font-size: 14px;
+    text-align: left;
 
   }
-
+.cp-right {
+  text-align: right;
+  display: inline-block;
+  width: 48%;
+}
   input[type="radio"]:checked ~ .primary,
   input[type="checkbox"]:checked ~ .primary  {
     border-bottom: 2px solid #999;
@@ -642,6 +648,9 @@ input[type="checkbox"]{
 }
 
 
+.even-row-desctop {
+  background-color: #f4f4f4;
+}
 
 
 
