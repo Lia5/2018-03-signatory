@@ -1,0 +1,52 @@
+
+
+@media screen and (max-width: 1199px) {
+  .box-menu {
+    margin-left: -15px;
+    margin-right: -15px; 
+  }
+  .head-first {
+    padding: 10px 30px 10px 20px;
+  }
+  .head-first-city {
+    width: 50%;
+  }
+  .wrap-head-first-login {
+    width: 50%;
+  }
+ 
+  .box-menu-catalog {
+    float: none;
+    width: 100%;
+  }
+  .page-menu {
+    width: 69%;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .page-menu__link {
+    font-size: 14px;
+  }
+  .menu-catalog__title {
+    padding: 15px 20px;
+  }
+  .page-menu-phone {
+    width: 28%;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-menu {
+    margin-left: 0;
+    margin-right: 0; 
+  }
+  .head-two {
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+}

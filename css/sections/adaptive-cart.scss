@@ -71,9 +71,6 @@
       padding: 28px;
       width: 100%;
     }
-    .page-card-watch-item {
-      padding: 30px 24px;
-    }
     .page-card-prod .card-prod-box-wrapp2-checkbox {
       float: left;
       margin-left: -27px;
@@ -100,11 +97,34 @@
     .even-row-desctop {
       background-color: $white;
     }
+    .page-card-series {
+      margin-right: 0;
+      margin-top: 0;
+    }
+    .page-card-watch {
+      margin-top: 0;
+    }
 
-
+/*series*/
+    .page-card-series-item-img {
+      max-height: 146px;
+      overflow: hidden;
+    }
+    .page-card-series-item {
+      padding: 36px 19px 40px;
+    }
+    .page-card-series-item-wrap {
+      padding-right: 0;
+    }
     .page-card-series-item-img {
       width: 133px;
       margin: 0 auto;
+    }
+    .page-card-watch-item-wrap {
+      padding-right: 0;
+    }
+    .page-card-watch-item{
+      padding: 36px 19px 40px;
     }
 }
 @media screen and (max-width: 767px) {

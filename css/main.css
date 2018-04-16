@@ -9983,7 +9983,7 @@ button.close {
   background: #202020; }
 
 .page-menu {
-  float: left;
+  display: inline-block;
   width: 55%;
   text-align: center; }
 
@@ -13887,6 +13887,8 @@ p.modal-7-form-intro {
     padding: 3px; } }
 
 @media screen and (max-width: 767px) {
+  .disable-mobile {
+    display: none; }
   .container {
     padding: 0; }
   .page-discount-title {
@@ -13912,6 +13914,55 @@ p.modal-7-form-intro {
 
 
 */
+@media screen and (max-width: 1199px) {
+  .box-menu {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .head-first {
+    padding: 10px 30px 10px 20px; }
+  .head-first-city {
+    width: 50%; }
+  .wrap-head-first-login {
+    width: 50%; }
+  .box-menu-catalog {
+    float: none;
+    width: 100%; }
+  .page-menu {
+    width: 69%;
+    text-align: left;
+    padding-left: 10px; }
+  .page-menu__link {
+    font-size: 14px; }
+  .menu-catalog__title {
+    padding: 15px 20px; }
+  .page-menu-phone {
+    width: 28%;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .box-menu {
+    margin-left: 0;
+    margin-right: 0; }
+  .head-two {
+    position: relative; } }
+
+@media screen and (max-width: 1199px) {
+  .footer-sticky-menu {
+    margin-right: -15px;
+    margin-left: -15px; }
+  .sticky-menu {
+    width: 100%; }
+  .footer-list-wrapp {
+    width: 100%;
+    margin-bottom: 18px; }
+  .footer-logo {
+    float: left;
+    width: 67%; }
+  .footer-menu-phone {
+    float: right; }
+  .footer-social {
+    float: left; } }
+
 @media screen and (max-width: 1199px) {
   .page-video-item {
     width: 49%;
@@ -14138,8 +14189,6 @@ p.modal-7-form-intro {
   .card-prod-box-wrapp2 {
     padding: 28px;
     width: 100%; }
-  .page-card-watch-item {
-    padding: 30px 24px; }
   .page-card-prod .card-prod-box-wrapp2-checkbox {
     float: left;
     margin-left: -27px;
@@ -14158,8 +14207,25 @@ p.modal-7-form-intro {
     width: 82%; }
   .even-row-desctop {
     background-color: #fff; }
+  .page-card-series {
+    margin-right: 0;
+    margin-top: 0; }
+  .page-card-watch {
+    margin-top: 0; }
+  /*series*/
+  .page-card-series-item-img {
+    max-height: 146px;
+    overflow: hidden; }
+  .page-card-series-item {
+    padding: 36px 19px 40px; }
+  .page-card-series-item-wrap {
+    padding-right: 0; }
   .page-card-series-item-img {
     width: 133px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .page-card-watch-item-wrap {
+    padding-right: 0; }
+  .page-card-watch-item {
+    padding: 36px 19px 40px; } }
 
 /*# sourceMappingURL=main.css.map */

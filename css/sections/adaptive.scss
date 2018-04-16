@@ -6,6 +6,9 @@
 .disable-desktop {
   display: none;
 }
+.visible-mobile {
+  display: none;  
+}
 @media screen and (max-width: 1199px) {
   .container {
     width: 100%;
@@ -37,6 +40,12 @@
 
 }
 @media screen and (max-width: 767px) {
+  .disable-mobile {
+    display: none;  
+  }
+  .visible-mobile {
+    display: inline-block;  
+  }
   .container {
     padding: 0;
   }

@@ -80,6 +80,14 @@ slick clider page-card-main-videoslider
     prevArrow: '<i class="fa fa-angle-left slider-company-arrows slider-company_arrow-left"></i>',
     nextArrow: '<i class="fa fa-angle-right slider-company-arrows slider-company_arrow-right"></i>',
     dots: false,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 /*========================
 slick clider footer
