@@ -14318,8 +14318,29 @@ p.modal-7-form-intro {
   .page-card-main-videoslider {
     display: none; }
   .page-card-item {
-    padding: 10px 15px; }
+    padding: 0;
+    margin-top: 0; }
   .page-card-main-btn > span {
+    display: none; }
+  .page-card-main-title {
+    width: 100%; }
+  .page-card-main-title-name {
+    font-size: 16px; }
+  .page-card-main-title-kod {
+    font-size: 14px; }
+  .page-card-item-main {
+    margin-right: 0; }
+  .page-card-main-title {
+    padding: 9px 16px;
+    background-color: #ededed; }
+  .page-card-main-btn {
+    padding: 5px; }
+  .page-card-main-slider {
+    width: 100%; }
+  .page-card-controls-discount {
+    top: -380px;
+    left: 26px; }
+  .page-card-controls-discount > span {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */
