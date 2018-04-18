@@ -123,8 +123,28 @@
     .page-card-watch-item-wrap {
       padding-right: 0;
     }
-    .page-card-watch-item{
+    .page-card-watch-item {
       padding: 36px 19px 40px;
+    }
+    .accordeon-titlem {
+      position: relative;
+    }
+    .footer .accordeon-titlem:after {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%) ;
+      content: '+';
+      font-size: 30px;
+      color: $white;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    
+    .footer .accordeon-titlem.is-opened:after {
+      content: '-';
     }
 }
 @media screen and (max-width: 767px) {
