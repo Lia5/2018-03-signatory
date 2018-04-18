@@ -14318,6 +14318,8 @@ p.modal-7-form-intro {
   .page-card-main-videoslider {
     display: none; }
   .page-card-item {
-    padding: 10px 15px; } }
+    padding: 10px 15px; }
+  .page-card-main-btn > span {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

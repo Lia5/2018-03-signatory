@@ -154,6 +154,9 @@
   .page-card-item {
     padding: 10px 15px;
   }
+  .page-card-main-btn>span {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
 
