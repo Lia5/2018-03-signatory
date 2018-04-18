@@ -44,8 +44,7 @@
       display: inline-block;
     }
     .page-card-item-descr {
-      padding-left: 6%;
-      width: 70%;
+      width: 65%;
       font-size: 12px;
     }
     .page-card-controls {
@@ -146,10 +145,23 @@
     .footer .accordeon-titlem.is-opened:after {
       content: '-';
     }
+    .page-card-items-conditions.visible-mobile {
+      display: none;
+    }
+
 }
 @media screen and (max-width: 767px) {
+  .page-card-item {
+    background-color: transparent;
+  }
   .page-card-main-videoslider {
     display: none;
+  }
+  .page-card-item-main {
+    background-color: $white;
+  }
+  .page-card-main-slider {
+    margin: 0;
   }
   .page-card-item {
     padding: 0;
@@ -179,13 +191,66 @@
   }
   .page-card-main-slider {
     width: 100%;
+    border: none;
   }
   .page-card-controls-discount {
-    top: -380px;
+    top: -365px;
     left: 26px;
   }
   .page-card-controls-discount>span {
     display: none;
+  }
+  .page-card-controls {
+    width: 100%;
+  }
+  .page-card-item-descr {
+    width: 100%;
+    margin-left: 0;
+  }
+  .page-card-controls-price-txt-old {
+    display: none;
+  }
+  .page-card-controls-price-txt {
+    display: none;
+  }
+  .page-card-controls-price-figure-old {
+    display: inline-block;
+    width: 43%;
+  }
+  .page-card-controls-price-figure {
+    display: inline-block;
+    width: 53%;
+  }
+  .page-card-controls-price {
+    margin-bottom: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .page-card-item-descr-stars.visible-mobile {
+    margin-top: 0;
+  }
+  .page-card-controls {
+    background-color: $white;
+    padding: 0 40px;
+    -webkit-box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+    box-shadow: 0px 1px 2.97px 0.03px rgba(40, 40, 40, 0.35);
+    border-radius: 3px;
+    margin-bottom: 16px;
+  }
+  .page-card-items-descr-txt-wrap {
+    width: 100%;
+    padding: 16px 40px;
+    background-color: $white;
+    margin-bottom: 16px;
+  }
+  .page-card-items-conditions.disable-mobile {
+    display: none;
+  }
+  .page-card-items-conditions.visible-mobile {
+    display: block;
+    background-color: $white;
+    margin-bottom: 16px;
+    padding: 16px 40px;
   }
 }
 @media screen and (max-width: 320px) {
