@@ -13367,6 +13367,10 @@ ol > li:before {
   float: right;
   padding-left: 25px; }
 
+.footer-list-wrapp {
+  position: relative;
+  z-index: 1; }
+
 .popup-box {
   position: absolute;
   border-radius: 5px;
@@ -13993,6 +13997,22 @@ p.modal-7-form-intro {
     float: right; }
   .footer-social {
     float: left; } }
+
+@media screen and (max-width: 767px) {
+  .footer-sticky-menu {
+    margin-right: 0;
+    margin-left: 0; }
+  .sticky-menu {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .sticky-menu-phone {
+    text-align: center; }
+  .sticky-menu-box-btn button {
+    padding: 3px 6px;
+    font-size: 14px;
+    min-width: 140px; }
+  .accordeon-contentm {
+    display: none; } }
 
 @media screen and (max-width: 1199px) {
   .page-video-item {
