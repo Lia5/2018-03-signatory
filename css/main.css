@@ -14012,7 +14012,23 @@ p.modal-7-form-intro {
     font-size: 14px;
     min-width: 140px; }
   .accordeon-contentm {
-    display: none; } }
+    display: none; }
+  .footer {
+    padding: 20px 40px; }
+  .footer-logo {
+    display: none; }
+  .footer-menu-phone {
+    display: none; }
+  .footer-social {
+    float: none; }
+  .footer-item-soc {
+    text-align: center; }
+  .order__list {
+    display: none; }
+  .box-konf {
+    float: none;
+    width: 100%;
+    padding: 9px 12px; } }
 
 @media screen and (max-width: 1199px) {
   .page-video-item {
