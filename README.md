@@ -1,5 +1,5 @@
 # signatory
-<p><a href="https://lia5.github.io/2018-03-signatory/index.html">Главная</a></p>
+
 <p><a href="https://lia5.github.io/2018-03-signatory/discount.html">Акция</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/discounts.html">Акции</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/about.html">О компании</a></p>
@@ -22,3 +22,4 @@
 <p><a href="https://lia5.github.io/2018-03-signatory/registr.html">Регистрация</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/remember-pass.html">Вспомнить пароль</a></p>
 <p><a href="https://lia5.github.io/2018-03-signatory/video.html">Видео-обзоры</a></p>
+<p><a href="https://lia5.github.io/2018-03-signatory/index.html">Главная</a></p>

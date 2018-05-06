@@ -10696,7 +10696,7 @@ button.close {
 
 .page-card-item-main {
   width: 48%;
-  margin-right: 3%;
+  margin-right: 2%;
   display: inline-block;
   vertical-align: top;
   color: #4c4c4c; }
@@ -10846,8 +10846,8 @@ button.close {
   z-index: 1; }
 
 .page-card-item-descr {
-  width: 22%;
-  margin-left: 5%;
+  width: 28%;
+  margin-left: 3%;
   display: inline-block;
   vertical-align: top; }
 
@@ -10893,7 +10893,7 @@ button.close {
 
 .page-card-controls {
   position: relative;
-  width: 21%;
+  width: 18%;
   display: inline-block;
   vertical-align: top; }
 
